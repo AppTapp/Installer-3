@@ -4,7 +4,7 @@
 
 After a decade, we are glad to be able to open source Installer 3.
 
-Installer 3 was the de facto package manager for iPhoneOS 1 developed by RiPDev & Nullriver (company). It uses the AppTapp framework for managing packages.
+Installer 3 was the de facto package manager for iPhoneOS 1 developed by Ripdev & Nullriver (company). It uses the AppTapp framework for managing packages.
 
 ### What is included?
 
@@ -12,15 +12,19 @@ Installer source code, AppTapp Framework source, Repository Code, Translation st
 
 ### Credit
 
-RiPDev
+Ripdev
 
-Nullriver 
+Nullriver Software
 
 ### Translations
 
 English 
 
 Russian 
+
+### Future Development
+
+Installer 3 will be further developed by AppTapp & members of the Legacy Jailbreak community for iPhone OS 1. There are no plans to update Installer 3 past iPhoneOS 1. For iPhoneOS 2, see the upcoming Installer 4 source code. See /r/LegacyJailbreak & https://discord.gg/NSGfUq
 
 ### Changelog 
 
