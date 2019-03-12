@@ -1,0 +1,26 @@
+
+** 3.2+ **
+
+- is there room enough to download the package? is there room to install it in all the places (filesystems) it needs to go in?
+- random locations for files and plists
+- new repo class??
+- improve views, fix date categories
+- make plugin work
+- direct url installation via plugin
+- add ratings
+- Add proper icons
+- optimize package filtering/loading/refreshing code
+- Clean up operation process
+- improve untrusted source warning
+- dependencies?
+
+--- slava:
+
++ cache featured page - done in 3.1a1
++ UISectionList for all packages
++ local file installation - 3.1
++ platform detection - platformName always returns iPhone! - done in 3.1a1
++ add tracking (uuid) - 3.1
++ Rewrite refreshes using NSURLRequest/Connection, fix timeouts on refresh
+- return to category after install
+- package description row: dynamic height

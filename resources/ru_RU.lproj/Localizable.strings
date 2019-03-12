@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>About</key>
+	<string>О продукте</string>
+	<key>Add</key>
+	<string>Добавить</string>
+	<key>Add Source</key>
+	<string>Добавить URL</string>
+	<key>Add to Queue</key>
+	<string>Добавить в очередь</string>
+	<key>All Packages</key>
+	<string>Все программы</string>
+	<key>Already Donated</key>
+	<string>Уже сделано</string>
+	<key>An Installer update is available, do you wish to update now?</key>
+	<string>Доступно обновление Installer, желаете обновить?</string>
+	<key>Available Updates</key>
+	<string>Доступные обновления</string>
+	<key>Cancel</key>
+	<string>Отмена</string>
+	<key>Categories</key>
+	<string>Категории</string>
+	<key>Category</key>
+	<string>Категория</string>
+	<key>Checking sources...</key>
+	<string>Проверяю источники…</string>
+	<key>Cleaning up...</key>
+	<string>Завершение…</string>
+	<key>Clear Queue</key>
+	<string>Очистить очередь</string>
+	<key>Confirmation</key>
+	<string>Подтверждение</string>
+	<key>Contact</key>
+	<string>Поддержка</string>
+	<key>Copyright 2007-2008 Nullriver Software and RiP Dev</key>
+	<string>Copyright ©2007-2008 Nullriver Software и RiP Dev</string>
+	<key>Could not refresh sources!</key>
+	<string>Невозможно обновить репозитории!</string>
+	<key>Delete</key>
+	<string>Удалить</string>
+	<key>Donate Later</key>
+	<string>Позже</string>
+	<key>Donate Now</key>
+	<string>Пожертвовать</string>
+	<key>Done</key>
+	<string>Готово</string>
+	<key>Downloading package...</key>
+	<string>Скачиваю …</string>
+	<key>Edit</key>
+	<string>Изменить</string>
+	<key>Error</key>
+	<string>Ошибка</string>
+	<key>Featured</key>
+	<string>Избранное</string>
+	<key>Install</key>
+	<string>Установить</string>
+	<key>Installer Update</key>
+	<string>Обновление Installer</string>
+	<key>Installer Updated</key>
+	<string>Installer обновлён</string>
+	<key>Installer represents many hours of hard work. If you find Installer useful, please consider donating to show your support.</key>
+	<string>Installer уже много часов трудится на благо вашего iPhone. Если вы находите Installer полезным, пожалуйста, выразите свою благодарность с помощью пожертвования.</string>
+	<key>Installer was not installed correctly. It should be run as root:wheel. We will continue but please remember that it may not function correctly.</key>
+	<string>Installer был установлен некорректно. Для нормальной работы нужен root:wheel. Установка будет продолжена, но помните, в работе Installer могут быть проблемы.</string>
+	<key>Installer was updated, you will need to restart Instaler.</key>
+	<string>Installer успешно обновлён, вам необходимо его перезагрузить.</string>
+	<key>Installing package...</key>
+	<string>Устанавливаю программу…</string>
+	<key>Insufficient Permissions</key>
+	<string>Недостаточно прав</string>
+	<key>Location</key>
+	<string>Размещение</string>
+	<key>Main script execution failed!</key>
+	<string>Ошибка в скрипте установки. Свяжитесь с владельцем репозитория.</string>
+	<key>More Info</key>
+	<string>Информация</string>
+	<key>Name</key>
+	<string>Название</string>
+	<key>Not enough free space to update Installer! Please free at least 512 KB of space.</key>
+	<string>Недостаточно свободного места для обновления Installer! Освободите, пожалуйста, по крайней мере 512 KB.</string>
+	<key>Notice</key>
+	<string>Заметки</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Older</key>
+	<string>Раньше</string>
+	<key>One or more of the updated packages come from an untrusted source and may be unsafe to update!</key>
+	<string>Один или несколько обновляемых программ размещены в непроверенных источниках, что может быть опасным для вашего iPhone!</string>
+	<key>Package</key>
+	<string>Программа</string>
+	<key>Package s/b %@</key>
+	<string>Программа %@</string>
+	<key>Packages</key>
+	<string>Программы</string>
+	<key>Please Donate</key>
+	<string>Поблагодарить</string>
+	<key>Please wait...</key>
+	<string>Подождите...</string>
+	<key>Postflight script execution failed!</key>
+	<string>Ошибка в скрипте пост-установки. Свяжитесь с владельцем репозитория.</string>
+	<key>Preflight script execution failed!</key>
+	<string>Ошибка в скрипте предустановки. Свяжитесь с владельцем репозитория.</string>
+	<key>Recent Packages</key>
+	<string>Недавние</string>
+	<key>Refresh</key>
+	<string>Обновить</string>
+	<key>Refresh Failed</key>
+	<string>Обновление не удалось</string>
+	<key>Refresh Now</key>
+	<string>Обновить</string>
+	<key>Refreshing sources...</key>
+	<string>Обновление...</string>
+	<key>Refreshing sources... 2</key>
+	<string>Обновляю репозитории…</string>
+	<key>Reinstall</key>
+	<string>Обновить</string>
+	<key>Reload</key>
+	<string>Обновить</string>
+	<key>Remove from Queue</key>
+	<string>Удалить из очереди</string>
+	<key>Running postflight...</key>
+	<string>Пост-установка…</string>
+	<key>Running preflight...</key>
+	<string>Предустановка…</string>
+	<key>Search</key>
+	<string>Поиск</string>
+	<key>Size</key>
+	<string>Размер</string>
+	<key>Source</key>
+	<string>Источник</string>
+	<key>Sources</key>
+	<string>Источники</string>
+	<key>This package comes from an untrusted source and may be unsafe to update!</key>
+	<string>Эта программа размещена в непроверенном источнике и может быть опасной для вашего iPhone!</string>
+	<key>This package comes from an untrusted source, it may be unsafe to install!</key>
+	<string>Эта программа размещена в непроверенном источнике, что может быть опасным для вашего iPhone!</string>
+	<key>Today</key>
+	<string>Сегодня</string>
+	<key>Uninstall</key>
+	<string>Удалить</string>
+	<key>Uninstalling package...</key>
+	<string>Удаляю программу…</string>
+	<key>Untitled Source</key>
+	<string>Непроверенный источник</string>
+	<key>Update</key>
+	<string>Обновить</string>
+	<key>Update All</key>
+	<string>Обновить все</string>
+	<key>Update Now</key>
+	<string>Обновить</string>
+	<key>Update all packages?</key>
+	<string>Обновить все программы?</string>
+	<key>Updates</key>
+	<string>Обновления</string>
+	<key>Updating package...</key>
+	<string>Обновляю программу…</string>
+	<key>Version</key>
+	<string>Версия</string>
+	<key>Version %@</key>
+	<string>Версия %@</string>
+	<key>Yesterday</key>
+	<string>Вчера</string>
+</dict>
+</plist>

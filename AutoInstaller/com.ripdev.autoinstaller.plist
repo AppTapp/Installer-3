@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>com.ripdev.autoinstaller</string>
+	<key>LaunchOnlyOnce</key>
+	<true/>
+	<key>Nice</key>
+	<integer>20</integer>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/AutoInstallerService</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/var/logs/autoinstaller-stderr</string>
+	<key>StandardOutPath</key>
+	<string>/var/logs/autoinstaller-stdout</string>
+</dict>
+</plist>
