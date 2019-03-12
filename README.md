@@ -12,12 +12,14 @@ Installer source code, AppTapp Framework source, Repository Code, Translation st
 
 ### Credit
 
-MainRiPDev
+RiPDev
+
 Nullriver 
 
 ### Translations
 
 English 
+
 Russian 
 
 ### Changelog 
