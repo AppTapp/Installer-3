@@ -12,20 +12,14 @@
 #define __REMOTE_PACKAGES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"RemotePackages.plist"]
 #define __LOCAL_PACKAGES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"LocalPackages.plist"]
 
-#define __FEATURED_LOCATION__				@"http://simplysmp.net/ipwn"
-#define __TRUSTED_SOURCES_LOCATION__			@"http://simplysmp.com/installer3/trusted.plist"
+#define __FEATURED_LOCATION__				@"http://www.apptapp.com/featured/"
+#define __TRUSTED_SOURCES_LOCATION__			@"http://repository.apptapp.com/trusted.plist"
 
-#define __DEFAULT_SOURCE_NAME__				@"SimplySMP Repository"
-#define __DEFAULT_SOURCE_CATEGORY__			@"AppTapp Unofficial"
-#define __DEFAULT_SOURCE_LOCATION__			@"http://simplysmp.com/installer/repo.xml"
-#define __DEFAULT_SOURCE_MAINTAINER__			@"Ninja"
-#define __DEFAULT_SOURCE_CONTACT__			@"test@simplysmp.com"
-
-#define __DEFAULT2_SOURCE_NAME__			@"AppTapp Unofficial"
-#define __DEFAULT2_SOURCE_CATEGORY__			@"AppTapp Unofficial"
-#define __DEFAULT2_SOURCE_LOCATION__			@"http://whitera1n.com/apptapp/repo.xml"
-#define __DEFAULT2_SOURCE_MAINTAINER__			@"lex"
-#define __DEFAULT2_SOURCE_CONTACT__			@"nocontact@whitera1n.com"
+#define __DEFAULT_SOURCE_NAME__				@"AppTapp Official"
+#define __DEFAULT_SOURCE_CATEGORY__			@"AppTapp"
+#define __DEFAULT_SOURCE_LOCATION__			@"http://repository.apptapp.com/"
+#define __DEFAULT_SOURCE_MAINTAINER__			@"Nullriver, Inc."
+#define __DEFAULT_SOURCE_CONTACT__			@"apptapp@nullriver.com"
 
 #define __INSTALLER_NAME__				@"Installer"
 #define __INSTALLER_VERSION__				[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]
@@ -48,7 +42,7 @@
 // SKA Local source support
 #define __LOCAL_SOURCE_LOCATION__			@"local:"
 #define __LOCAL_SOURCE_NAME__				@"Local Packages"
-#define __LOCAL_SOURCE_CATEGORY__			@"Local Packages"
+#define __LOCAL_SOURCE_CATEGORY__			@"AppTapp"
 #define __LOCAL_SOURCE_MAINTAINER__			@"Nullriver, Inc."
 #define __LOCAL_SOURCE_CONTACT__			@"apptapp@nullriver.com"
 #define __LOCAL_SOURCE_FOLDER__				[@"~/Media/Installer" stringByExpandingTildeInPath]

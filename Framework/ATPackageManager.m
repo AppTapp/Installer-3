@@ -41,7 +41,6 @@ static ATPackageManager * sharedInstance = nil;
                 if(!(trustedSources = [NSMutableArray arrayWithContentsOfFile:__TRUSTED_SOURCES__])) {
                         trustedSources = [[NSMutableArray alloc] init];
                         [trustedSources addObject:__DEFAULT_SOURCE_LOCATION__];
-			[trustedSources addObject:__DEFAULT2_SOURCE_LOCATION__];
                 }
 
                 // Register the package sources
@@ -56,16 +55,8 @@ static ATPackageManager * sharedInstance = nil;
 										__DEFAULT_SOURCE_CONTACT__,		@"contact",
 										__DEFAULT_SOURCE_CATEGORY__,		@"category",
 									nil];
-					NSMutableDictionary * defaultSource2 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-										__DEFAULT2_SOURCE_NAME__,		@"name",
-										__DEFAULT2_SOURCE_LOCATION__,		@"location",
-										__DEFAULT2_SOURCE_MAINTAINER__,		@"maintainer",
-										__DEFAULT2_SOURCE_CONTACT__,		@"contact",
-										__DEFAULT2_SOURCE_CATEGORY__,		@"category",
-									nil];
 
 					[packageSources addObject:defaultSource];
-					[packageSources addObject:defaultSource2];
    				}
 
 				// Check and add the local source
