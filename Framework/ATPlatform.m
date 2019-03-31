@@ -2,20 +2,22 @@
 // Copyright 2007 Nullriver, Inc.
 
 #import "ATPlatform.h"
+#import <GraphicsServices/GraphicsServices.h>
 
-extern CFTypeRef GSSystemGetCapability(CFStringRef identity);
+//extern CFTypeRef GSSystemGetCapability(CFStringRef identity);
+static CFTypeRef (*$GSSystemCopyCapability)(CFStringRef);
 extern int ripdev_uuid(char * uuid);
 
 @implementation ATPlatform
 
 + (NSString *)platformName {
 	/* SKA 03/14/08 Added real platform detection (iPhone or iPod) using GS's capabilities */
-	id caps = (id)GSSystemGetCapability(NULL);
+	//id caps = (id)GSSystemGetCapability(NULL);
 	
-	if (caps && [caps isKindOfClass:[NSDictionary class]])
-	{
-		return ([caps objectForKey:@"deviceName"] ? [caps objectForKey:@"deviceName"] : @"iPhone");
-	}
+	//if (caps && [caps isKindOfClass:[NSDictionary class]])
+	//{
+	//	return ([caps objectForKey:@"deviceName"] ? [caps objectForKey:@"deviceName"] : @"iPhone");
+	//}
 	/* ~SKA */
 	
 	return @"iPhone";

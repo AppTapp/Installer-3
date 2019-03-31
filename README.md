@@ -10,6 +10,13 @@ Installer 3 was the de facto package manager for iPhoneOS 1 developed by Ripdev 
 
 Installer source code, AppTapp Framework source, Repository Code, Translation strings.
 
+### Building
+
+Your going to need a toolchain (arm-apple-darwin) capable of build binaries for the arm-apple-darwin platform.
+You can obtain this here http://whitera1n.com/lti/ follow the instructions carefully, you made do this in a chroot on modern systems.
+You will also need to compile https://github.com/tpoechtrager/cctools-port for your host in order to obtain install_name_tool. You may just compile and install that one binary if you want.
+After all this enter the Installer directory and type make. Profit!!!
+
 ### Credit
 
 Ripdev

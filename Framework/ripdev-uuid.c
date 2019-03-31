@@ -1,6 +1,6 @@
 #include <IOKit/IOKitLib.h>
 #include <CoreFoundation/CoreFoundation.h>
-#include <SystemConfiguration/SystemConfiguration.h>
+#include "SystemConfiguration/SystemConfiguration.h"
 
 #define	DEVICEID_MAC		1
 #define	DEVICEID_MAC_BT		2

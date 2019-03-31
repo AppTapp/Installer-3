@@ -62,7 +62,6 @@ bundle:			Framework Installer
 			cp PackageNew.png Installer.app/PackageNew.png
 			cp Background.png Installer.app/Background.png
 			cp -Rf resources/* Installer.app/
-			find -d Installer.app -name .svn -exec rm -rf {} \;
 			chmod +s Installer.app/Installer
 			sudo chown root:wheel Installer.app/Installer
 
