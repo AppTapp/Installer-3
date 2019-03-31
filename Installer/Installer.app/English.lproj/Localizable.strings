@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>About</key>
+	<string>About</string>
+	<key>Add</key>
+	<string>Add</string>
+	<key>Add Source</key>
+	<string>Add Source</string>
+	<key>Add to Queue</key>
+	<string>Add to Queue</string>
+	<key>All Packages</key>
+	<string>All Packages</string>
+	<key>Already Donated</key>
+	<string>Already Donated</string>
+	<key>An Installer update is available, do you wish to update now?</key>
+	<string>An Installer update is available, do you wish to update now?</string>
+	<key>Available Updates</key>
+	<string>Available Updates</string>
+	<key>Cancel</key>
+	<string>Cancel</string>
+	<key>Categories</key>
+	<string>Categories</string>
+	<key>Category</key>
+	<string>Category</string>
+	<key>Checking sources...</key>
+	<string>Checking sources…</string>
+	<key>Cleaning up...</key>
+	<string>Cleaning up…</string>
+	<key>Clear Queue</key>
+	<string>Clear Queue</string>
+	<key>Confirmation</key>
+	<string>Confirmation</string>
+	<key>Contact</key>
+	<string>Contact</string>
+	<key>Copyright 2007-2008 Nullriver Software and RiP Dev</key>
+	<string>Copyright ©2007-2008 Nullriver Software and RiP Dev</string>
+	<key>Could not refresh sources!</key>
+	<string>Could not refresh sources!</string>
+	<key>Donate Later</key>
+	<string>Donate Later</string>
+	<key>Donate Now</key>
+	<string>Donate Now</string>
+	<key>Done</key>
+	<string>Done</string>
+	<key>Downloading package...</key>
+	<string>Downloading package…</string>
+	<key>Edit</key>
+	<string>Edit</string>
+	<key>Error</key>
+	<string>Error</string>
+	<key>Featured</key>
+	<string>Featured</string>
+	<key>Install</key>
+	<string>Install</string>
+	<key>Installer Update</key>
+	<string>Installer Update</string>
+	<key>Installer Updated</key>
+	<string>Installer Updated</string>
+	<key>Installer represents many hours of hard work. If you find Installer useful, please consider donating to show your support.</key>
+	<string>Installer represents many hours of hard work. If you find Installer useful, please consider donating to show your support.</string>
+	<key>Installer was not installed correctly. It should be run as root:wheel. We will continue but please remember that it may not function correctly.</key>
+	<string>Installer was not installed correctly. It should be run as root:wheel. We will continue but please remember that it may not function correctly.</string>
+	<key>Installer was updated, you will need to restart Instaler.</key>
+	<string>Installer was updated, you will need to restart Instaler.</string>
+	<key>Installing package...</key>
+	<string>Installing package…</string>
+	<key>Insufficient Permissions</key>
+	<string>Insufficient Permissions</string>
+	<key>Location</key>
+	<string>Location</string>
+	<key>Main script execution failed!</key>
+	<string>Main script execution failed!</string>
+	<key>More Info</key>
+	<string>More Info</string>
+	<key>Name</key>
+	<string>Name</string>
+	<key>Not enough free space to update Installer! Please free at least 512 KB of space.</key>
+	<string>Not enough free space to update Installer! Please free at least 512 KB of space.</string>
+	<key>Notice</key>
+	<string>Notice</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Older</key>
+	<string>Older</string>
+	<key>One or more of the updated packages come from an untrusted source and may be unsafe to update!</key>
+	<string>One or more of the updated packages come from an untrusted source and may be unsafe to update!</string>
+	<key>Package</key>
+	<string>Package</string>
+	<key>Package s/b %@</key>
+	<string>Package s/b %@</string>
+	<key>Packages</key>
+	<string>Packages</string>
+	<key>Please Donate</key>
+	<string>Please Donate</string>
+	<key>Please wait...</key>
+	<string>Please wait...</string>
+	<key>Postflight script execution failed!</key>
+	<string>Postflight script execution failed!</string>
+	<key>Preflight script execution failed!</key>
+	<string>Preflight script execution failed!</string>
+	<key>Recent Packages</key>
+	<string>Recent Packages</string>
+	<key>Refresh</key>
+	<string>Refresh</string>
+	<key>Refresh Failed</key>
+	<string>Refresh Failed</string>
+	<key>Refresh Now</key>
+	<string>Refresh Now</string>
+	<key>Refreshing sources...</key>
+	<string>Refreshing sources…</string>
+	<key>Reinstall</key>
+	<string>Reinstall</string>
+	<key>Reload</key>
+	<string>Reload</string>
+	<key>Remove from Queue</key>
+	<string>Remove from Queue</string>
+	<key>Running postflight...</key>
+	<string>Running postflight…</string>
+	<key>Running preflight...</key>
+	<string>Running preflight…</string>
+	<key>Search</key>
+	<string>Search</string>
+	<key>Size</key>
+	<string>Size</string>
+	<key>Source</key>
+	<string>Source</string>
+	<key>Sources</key>
+	<string>Sources</string>
+	<key>This package comes from an untrusted source and may be unsafe to update!</key>
+	<string>This package comes from an untrusted source and may be unsafe to update!</string>
+	<key>This package comes from an untrusted source, it may be unsafe to install!</key>
+	<string>This package comes from an untrusted source, it may be unsafe to install!</string>
+	<key>Today</key>
+	<string>Today</string>
+	<key>Uninstall</key>
+	<string>Uninstall</string>
+	<key>Uninstalling package...</key>
+	<string>Uninstalling package…</string>
+	<key>Untitled Source</key>
+	<string>Untitled Source</string>
+	<key>Update</key>
+	<string>Update</string>
+	<key>Update All</key>
+	<string>Update All</string>
+	<key>Update Now</key>
+	<string>Update Now</string>
+	<key>Update all packages?</key>
+	<string>Update all packages?</string>
+	<key>Updates</key>
+	<string>Updates</string>
+	<key>Updating package...</key>
+	<string>Updating package…</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>Version %@</key>
+	<string>Version %@</string>
+	<key>Yesterday</key>
+	<string>Yesterday</string>
+</dict>
+</plist>
