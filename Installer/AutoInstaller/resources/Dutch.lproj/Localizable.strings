@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>COPYRIGHT</key>
+	<string>©2008, RiP Dev &amp; Nullriver Software</string>
+	<key>PROGRESS_DONE</key>
+	<string>Klaar.</string>
+	<key>PROGRESS_INITIALIZING</key>
+	<string>Initialiseren…</string>
+	<key>PROGRESS_INSTALL_FORMAT</key>
+	<string>%@ Installeren…</string>
+	<key>PROGRESS_NOTHING_TO_INSTALL</key>
+	<string>Niets om te installeren.</string>
+	<key>PROGRESS_SCANNING</key>
+	<string>Pakketten Scanning…</string>
+</dict>
+</plist>
