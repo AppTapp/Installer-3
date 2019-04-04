@@ -12,7 +12,7 @@
 #define __REMOTE_PACKAGES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"RemotePackages.plist"]
 #define __LOCAL_PACKAGES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"LocalPackages.plist"]
 
-#define __FEATURED_LOCATION__				@"http://www.apptapp.com/featured/"
+#define __FEATURED_LOCATION__				@"http://tie1r.xyz/featured"
 #define __TRUSTED_SOURCES_LOCATION__			@"http://repository.apptapp.com/trusted.plist"
 
 #define __DEFAULT_SOURCE_NAME__				@"AppTapp Official"
