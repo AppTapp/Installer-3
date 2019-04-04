@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>About</key>
+	<string>Over</string>
+	<key>Add</key>
+	<string>Toevoegen</string>
+	<key>Add Source</key>
+	<string>Voeg bron toe</string>
+	<key>Add to Queue</key>
+	<string>Toevoegen aan wachtrij</string>
+	<key>All Packages</key>
+	<string>Alle Paketten</string>
+	<key>Already Donated</key>
+	<string>Reeds gedoneerd</string>
+	<key>An Installer update is available, do you wish to update now?</key>
+	<string>Een Installer update is beschikbaar, wilt u nu updaten?</string>
+	<key>Available Updates</key>
+	<string>Beschikbare updates</string>
+	<key>Cancel</key>
+	<string>Annuleren</string>
+	<key>Categories</key>
+	<string>Categorieën</string>
+	<key>Category</key>
+	<string>Categorie</string>
+	<key>Checking sources...</key>
+	<string>Bronnen Controleren…</string>
+	<key>Cleaning up...</key>
+	<string>Opschonen…</string>
+	<key>Clear Queue</key>
+	<string>Wachtrij leegmaken</string>
+	<key>Confirmation</key>
+	<string>Bevestiging</string>
+	<key>Contact</key>
+	<string>Contact</string>
+	<key>Copyright 2007-2008 Nullriver Software and RiP Dev</key>
+	<string>Copyright ©2007-2008 Nullriver Software en RiP Dev</string>
+	<key>Could not refresh sources!</key>
+	<string>Installer kon de bronnen niet verversen</string>
+	<key>Donate Later</key>
+	<string>Later Doneren</string>
+	<key>Donate Now</key>
+	<string>Nu Doneren</string>
+	<key>Done</key>
+	<string>Klaar</string>
+	<key>Downloading package...</key>
+	<string>Pakket Downloaded…</string>
+	<key>Edit</key>
+	<string>Aanpassen</string>
+	<key>Error</key>
+	<string>Fout</string>
+	<key>Featured</key>
+	<string>Uitgelicht</string>
+	<key>Install</key>
+	<string>Installeren</string>
+	<key>Installer Update</key>
+	<string>Installer Update</string>
+	<key>Installer Updated</key>
+	<string>Installer Geüpdate</string>
+	<key>Installer represents many hours of hard work. If you find Installer useful, please consider donating to show your support.</key>
+	<string>Installer heeft vele uren werkt gekost. Als u Installer bruikbaar vind, overweeg dan te doneren.</string>
+	<key>Installer was not installed correctly. It should be run as root:wheel. We will continue but please remember that it may not function correctly.</key>
+	<string>Installer is niet correct geïnstalleerd. Het zou als root:wheel moeten draaien. We zullen proberen door te gaan maar Installer zal waarschijnlijk niet correct werken.</string>
+	<key>Installer was updated, you will need to restart Instaler.</key>
+	<string>Installer is geüpdate, en moet nu opnieuw worden opgestart.</string>
+	<key>Installing package...</key>
+	<string>Pakket Installeren…</string>
+	<key>Insufficient Permissions</key>
+	<string>Onvoldoende bevoegdheden</string>
+	<key>Location</key>
+	<string>Locatie</string>
+	<key>Main script execution failed!</key>
+	<string>Script kon niet worden uitgevoerd!</string>
+	<key>More Info</key>
+	<string>Meer Info</string>
+	<key>Name</key>
+	<string>Naam</string>
+	<key>Not enough free space to update Installer! Please free at least 512 KB of space.</key>
+	<string>Er is niet genoeg ruimte op de schijf om Installer te updaten. Zorg voor minimaal 512 kb aan ruimte.</string>
+	<key>Notice</key>
+	<string>Melding</string>
+	<key>OK</key>
+	<string>OK</string>
+	<key>Older</key>
+	<string>Ouder</string>
+	<key>One or more of the updated packages come from an untrusted source and may be unsafe to update!</key>
+	<string>Een of meer van de pakketten die worden geüpdate komen van een niet vertrouwde bron en zijn mogelijk onveilig om te gebruiken.</string>
+	<key>Package</key>
+	<string>Pakket</string>
+	<key>Package s/b %@</key>
+	<string>Pakket s/b %@</string>
+	<key>Packages</key>
+	<string>Pakketten</string>
+	<key>Please Donate</key>
+	<string>Doneer alstublieft</string>
+	<key>Please wait...</key>
+	<string>A.U.B. Wachten...</string>
+	<key>Postflight script execution failed!</key>
+	<string>Postflight script kon niet worden uitgevoerd!</string>
+	<key>Preflight script execution failed!</key>
+	<string>Preflight script kon niet worden uitgevoerd!</string>
+	<key>Recent Packages</key>
+	<string>Recente Pakketten</string>
+	<key>Refresh</key>
+	<string>Ververs</string>
+	<key>Refresh Failed</key>
+	<string>Verversen gefaald</string>
+	<key>Refresh Now</key>
+	<string>Nu Verversen</string>
+	<key>Refreshing sources...</key>
+	<string>Bronnen Verversen…</string>
+	<key>Reinstall</key>
+	<string>Herinstalleren</string>
+	<key>Reload</key>
+	<string>Herladen</string>
+	<key>Remove from Queue</key>
+	<string>Verwijderen van Wachtrij</string>
+	<key>Running postflight...</key>
+	<string>Postflight Uitvoeren…</string>
+	<key>Running preflight...</key>
+	<string>Preflight Uitvoeren…</string>
+	<key>Search</key>
+	<string>Zoeken</string>
+	<key>Size</key>
+	<string>Grootte</string>
+	<key>Source</key>
+	<string>Bron</string>
+	<key>Sources</key>
+	<string>Bronnen</string>
+	<key>This package comes from an untrusted source and may be unsafe to update!</key>
+	<string>Dit pakket komt van een niet-vertrouwde bron en kan onveilig zijn om te updaten!</string>
+	<key>This package comes from an untrusted source, it may be unsafe to install!</key>
+	<string>Dit pakket komt van een niet-vertrouwde bron en kan onveilig zijn om te Installeren!</string>
+	<key>Today</key>
+	<string>Vandaag</string>
+	<key>Uninstall</key>
+	<string>Verwijderen</string>
+	<key>Uninstalling package...</key>
+	<string>Pakket Verwijderen…</string>
+	<key>Untitled Source</key>
+	<string>Naamloze Bron</string>
+	<key>Update</key>
+	<string>Update</string>
+	<key>Update All</key>
+	<string>Update Allen</string>
+	<key>Update Now</key>
+	<string>Update Nu</string>
+	<key>Update all packages?</key>
+	<string>Alle Pakketten Updaten?</string>
+	<key>Updates</key>
+	<string>Updates</string>
+	<key>Updating package...</key>
+	<string>Pakket wordt geüpdate…</string>
+	<key>Version</key>
+	<string>Versie</string>
+	<key>Version %@</key>
+	<string>Versie %@</string>
+	<key>Yesterday</key>
+	<string>Gisteren</string>
+</dict>
+</plist>
