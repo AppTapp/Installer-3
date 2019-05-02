@@ -19,7 +19,7 @@ all:			bundle
 
 
 clean:	
-			rm -rf *.o Installer Installer.app
+			rm -rf *.o Installer Installer.app installer-3.12.zip ../Framework/AppTapp ../Framework/AppTapp.framework ../Framework/*.o
 
 
 %.o:			%.m
@@ -62,13 +62,11 @@ bundle:			Framework Installer
 			cp PackageNew.png Installer.app/PackageNew.png
 			cp Background.png Installer.app/Background.png
 			cp -Rf resources/* Installer.app/
-			chmod +s Installer.app/Installer
-			sudo chown root:wheel Installer.app/Installer
+			cp -r ../Library Installer.app/Library
 
 zip:			bundle
-			rm -rf Installer.zip
-			zip -9yr Installer.zip Installer.app
-
+			rm -rf installer.zip
+			zip -r installer-3.12.zip Installer.app 
 
 test:			all
 			scp -r Installer.app root@$(TESTHOST):/Applications/
