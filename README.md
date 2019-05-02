@@ -94,7 +94,7 @@ Version 3.12
 -Builds correctly due to Electimon.
 -Dutch Translations added by Sam Guichelaar.
 -Tweaked installation failed message to be more informative on possible fixes.
-_Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
+-Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
 ### License
 
