@@ -66,7 +66,7 @@
 	} else {
 		UIAlertSheet * aboutAlert = [[UIAlertSheet alloc] init];
 		[aboutAlert setTitle:[NSString stringWithFormat:@"Installer v%@", __INSTALLER_VERSION__]];
-		[aboutAlert setBodyText:NSLocalizedString(@"Copyright 2007-2008 Nullriver Software and RiP Dev", @"About Box")];
+		[aboutAlert setBodyText:NSLocalizedString(@"Copyright 2007-2019 Nullriver Software, RiP Dev, and the legacy jailbreak community.", @"About Box")];
 		[aboutAlert addButtonWithTitle:NSLocalizedString(@"OK", @"")];
 		[aboutAlert setDelegate:self];
 		[aboutAlert popupAlertAnimated:YES];
