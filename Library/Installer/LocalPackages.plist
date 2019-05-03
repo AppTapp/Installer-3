@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>bundleIdentifier</key>
+		<string>com.apptapp.Installer</string>
+		<key>category</key>
+		<string>System</string>
+		<key>contact</key>
+		<string>lex</string>
+		<key>description</key>
+		<string>The new open source Installer.app!</string>
+		<key>maintainer</key>
+		<string>lex</string>
+		<key>name</key>
+		<string>Installer</string>
+		<key>size</key>
+		<string>0</string>
+		<key>source</key>
+		<string>http://whitera1n.com</string>
+		<key>version</key>
+		<string>3.1.2</string>
+	</dict>
+	<dict>
+		<key>bundleIdentifier</key>
+		<string>com.lex.communitysources</string>
+		<key>category</key>
+		<string>System</string>
+		<key>contact</key>
+		<string>lex</string>
+		<key>description</key>
+		<string>The new Installer 3 sources for firmware 1.x.</string>
+		<key>maintainer</key>
+		<string>lex</string>
+		<key>name</key>
+		<string>Community Sources</string>
+		<key>size</key>
+		<string>0</string>
+		<key>source</key>
+		<string>http://whitera1n.com</string>
+		<key>version</key>
+		<string>2.0</string>
+	</dict>
+</array>
+</plist>
