@@ -13,14 +13,16 @@ Installer source code, AppTapp Framework source, Repository Code, Translation st
 ### Building
 
 Linux:
-Your going to need a toolchain (arm-apple-darwin) capable of build binaries for the arm-apple-darwin platform.
-You can obtain this here http://whitera1n.com/lti/ follow the instructions carefully, you may do this in a chroot on modern systems.
-You will also need to compile https://github.com/tpoechtrager/cctools-port for your host in order to obtain install_name_tool. You may just compile and install that one binary if you want. This program also comes with odcctools compiled but not installed with the odcctools from LTI.
-Now unzip the headers.zip to /usr/local/arm-apple-darwin/include/
-After all this enter the Installer directory and type make. Profit!!!
+- Your going to need a toolchain (arm-apple-darwin) capable of build binaries for the arm-apple-darwin platform.
+- You can obtain this here http://whitera1n.com/lti/ follow the instructions carefully, you may do this in a chroot on modern systems.
+- You will also need to compile https://github.com/tpoechtrager/cctools-port for your host in order to obtain install_name_tool. You may just compile and install that one binary if you want. This program also comes with odcctools compiled but not installed with the odcctools from LTI.
+- Now unzip the headers.zip to /usr/local/arm-apple-darwin/include/
+- After all this enter the Installer directory and type make.
+- Profit!!!
 
 Mac OS X:
-Install LTI v2.0 or newer from http://whitera1n.com/lti on a PPC or Intel Mac OS X 10.4 Tiger Mac. Then cd into the Installer directory & execute make.
+- Install LTI v2.0 or newer from http://whitera1n.com/lti on a PPC or Intel Mac OS X 10.4 Tiger Mac.
+- Then cd into the Installer directory & execute make.
 
 ### Credit
 
@@ -87,14 +89,14 @@ VERSION 3.11
 
 Version 3.12
 
--Fixed make clean.
--Redid make zip and make since the permissions and zip -r9 thing doesn't actually work correctly.
--Moved the private library directory to within Installer.app. This is because when Installer is on a dual boot jailbroken device, it may incorrectly read the other partition's library files otherwise.
--Tier1's new homepage replaces the defunct one.
--Builds correctly due to Electimon.
--Dutch Translations added by Sam Guichelaar.
--Tweaked installation failed message to be more informative on possible fixes.
--Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
+- Fixed make clean.
+- Redid make zip and make since the permissions and zip -r9 thing doesn't actually work correctly.
+- Moved the private library directory to within Installer.app. This is because when Installer is on a dual boot jailbroken device, it may incorrectly read the other partition's library files otherwise.
+- Tie1r's (pwnstaller) new homepage replaces the defunct one.
+- Builds correctly due to Electimon.
+- Dutch Translations added by Sam Guichelaar.
+- Tweaked installation failed message to be more informative on possible fixes.
+- Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
 ### License
 
