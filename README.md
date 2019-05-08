@@ -98,6 +98,14 @@ Version 3.12
 - Tweaked installation failed message to be more informative on possible fixes.
 - Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
+
+##Downloads
+- [Installer v3.0](http://pwnstaller.cc/Installer-3.0.zip)
+- [Installer v3.01](http://pwnstaller.cc/Installer-3.01.zip)
+- [Installer v3.1](http://pwnstaller.cc/Installer-3.1.zip)
+- [Installer v3.11](http://pwnstaller.cc/Installer-3.11.zip)
+- [Installer v3.12](http://pwnstaller.cc/Installer-3.12.zip)
+- [Installer v3.13](http://pwnstaller.cc/Installer-3.13.zip)
 ### License
 
 The Installer 3 source code is being released under the MIT license.
