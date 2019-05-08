@@ -6,7 +6,6 @@
 
 //extern CFTypeRef GSSystemGetCapability(CFStringRef identity);
 static CFTypeRef (*$GSSystemCopyCapability)(CFStringRef);
-extern int ripdev_uuid(char * uuid);
 
 @implementation ATPlatform
 
@@ -23,18 +22,6 @@ extern int ripdev_uuid(char * uuid);
 	return @"iPhone";
 }
 
-+ (NSString *)deviceUUID
-{
-	char deviceUUID[64];
-	
-	if (ripdev_uuid(deviceUUID) == 0)
-	{
-		return [NSString stringWithCString:deviceUUID];
-	}
-	
-	return nil;
-}
-
 + (NSString *)firmwareVersion {
 	return [[NSDictionary dictionaryWithContentsOfFile:@"/System/Library/CoreServices/SystemVersion.plist"] valueForKey:@"ProductVersion"];
 }
@@ -44,6 +31,7 @@ extern int ripdev_uuid(char * uuid);
 			@"1.0",
 			@"1.0.1",
 			@"1.0.2",
+			@"1.1",
 			@"1.1.1",
 			@"1.1.2",
 		nil];
