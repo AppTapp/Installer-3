@@ -104,7 +104,7 @@ Version 3.12
 
 Version 3.13 
 
--Removed UUID tracking. Installer isn't FaceBook.
+-Removed UUID tracking, faster source refreshing
 
 ### License
 
