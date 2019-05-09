@@ -12,17 +12,21 @@ Installer source code, AppTapp Framework source, Repository Code, Translation st
 
 ### Building
 
-Linux:
-- Your going to need a toolchain (arm-apple-darwin) capable of build binaries for the arm-apple-darwin platform.
-- You can obtain this here http://whitera1n.com/lti/ follow the instructions carefully, you may do this in a chroot on modern systems.
-- You will also need to compile https://github.com/tpoechtrager/cctools-port for your host in order to obtain install_name_tool. You may just compile and install that one binary if you want. This program also comes with odcctools compiled but not installed with the odcctools from LTI.
-- Now unzip the headers.zip to /usr/local/arm-apple-darwin/include/
-- After all this enter the Installer directory and type make.
-- Profit!!!
+Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with http://whitera1n.com/lti.
 
-Mac OS X:
-- Install LTI v2.0 or newer from http://whitera1n.com/lti on a PPC or Intel Mac OS X 10.4 Tiger Mac.
-- Then cd into the Installer directory & execute make.
+Once the toolchain is installed you can simply cd into the "Installer" directory and "make".
+
+### Installing
+
+On the iPhone OS 1 device, it is recommended you have the Moden iPhone Unix binkit installed to run these commands over ssh or in a Terminal app.
+
+Copy Installer.app to /Applications/Installer.app.
+
+chmod -R 4755 /Applications/Installer.app/Installer
+
+chown -R root:wheel /Applications/Installer.app
+
+killall -9 SpringBoard
 
 ### Credit
 
@@ -98,7 +102,11 @@ Version 3.12
 - Tweaked installation failed message to be more informative on possible fixes.
 - Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
+Version 3.13 
+
+-Removed UUID tracking, faster source refreshing
+
 ### License
 
-The Installer 3 source code is being released under the MIT license.
+The Installer 3 source code is being released under the MIT license. See the LICENSE file for more information.
 
