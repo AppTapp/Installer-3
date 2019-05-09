@@ -106,11 +106,13 @@ Version 3.12
 - Tweaked installation failed message to be more informative on possible fixes.
 - Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
-Version 3.13 
-
-- Removed UUID tracking, faster source refreshing.
-- Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
-- Temp directory auto generates in ~/Library/Installer. This fixes a possible bug where if Installer.app was not on disk0s2 and was on disk0s1, a single package could fill up the entire root partition due to the Library change.
+## Downloads
+- [Installer v3.0](http://pwnstaller.cc/Installer-3.0.zip)
+- [Installer v3.01](http://pwnstaller.cc/Installer-3.01.zip)
+- [Installer v3.1](http://pwnstaller.cc/Installer-3.1.zip)
+- [Installer v3.11](http://pwnstaller.cc/Installer-3.11.zip)
+- [Installer v3.12](http://pwnstaller.cc/Installer-3.12.zip)
+- [Installer v3.13](http://pwnstaller.cc/Installer-3.13.zip)
 
 ### License
 
