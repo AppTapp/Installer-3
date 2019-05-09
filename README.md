@@ -28,6 +28,10 @@ chmod -R 4755 /Applications/Installer.app/Installer
 
 killall -9 SpringBoard
 
+### Debugging 
+
+A neat trick you can do is run executables on the iPhone or iPod Touch like you can on Mac OS X. Over SSH execute /Applications/Installer.app/Installer (if your root you don't even need to set those pesky permissions). Installer.app will open and you can see all the printfs as it runs. This allows you to see where stuff is working and where stuff is broken when making changes to the source. When you want to exit Installer.app, you need to use the ctrl+c combo on whatever you used to SSH into your test device.
+
 ### Credit
 
 Ripdev
