@@ -194,7 +194,7 @@ static ATInstaller * sharedInstance = nil;
 	{
 		UIAlertSheet * failAlert = [[UIAlertSheet alloc] init];
 		[failAlert setTitle:NSLocalizedString(@"Insufficient Permissions", @"Installer Main")];
-		[failAlert setBodyText:NSLocalizedString(@"Installer does not have the correct permissions set. Execute the commands: chown -r root:wheel /Applications/Installer.app and chmod 4755 /Applications/Installer.app/Installer to fix this.", @"Installer Main")];
+		[failAlert setBodyText:NSLocalizedString(@"Installer does not have the correct permissions set. Execute the commands: chown -R root:wheel /Applications/Installer.app and chmod 4755 /Applications/Installer.app/Installer to fix this.", @"Installer Main")];
 		[failAlert addButtonWithTitle:NSLocalizedString(@"Exit", @"")];
 		[failAlert setContext:@"Permissions"];
 		[failAlert setDelegate:self];
