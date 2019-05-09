@@ -22,9 +22,9 @@ On the iPhone OS 1 device, it is recommended you have the Moden iPhone Unix bink
 
 Copy Installer.app to /Applications/Installer.app.
 
-chmod -R 4755 /Applications/Installer.app/Installer
-
 chown -R root:wheel /Applications/Installer.app
+
+chmod -R 4755 /Applications/Installer.app/Installer
 
 killall -9 SpringBoard
 
@@ -104,7 +104,8 @@ Version 3.12
 
 Version 3.13 
 
--Removed UUID tracking, faster source refreshing
+- Removed UUID tracking, faster source refreshing.
+- Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
 
 ### License
 
