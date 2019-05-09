@@ -4,8 +4,9 @@
 #define preferences					[NSUserDefaults standardUserDefaults]
 #define __REFRESH_INTERVAL__				60 * 60 * 12
 
-#define __PRIVATE_PATH__				[@"~/Library/Installer" stringByExpandingTildeInPath]
-#define __TEMP_PATH__					[__PRIVATE_PATH__ stringByAppendingPathComponent:@"Temp"]
+#define __PRIVATE_PATH__				[@"/Applications/Installer.app/Library" stringByExpandingTildeInPath]
+#define __PARENT_TEMP_PATH__			[@"~/Library/Installer" stringByExpandingTildeInPath]
+#define __TEMP_PATH__					[__PARENT_TEMP_PATH__ stringByAppendingPathComponent:@"Temp"]
 
 #define __TRUSTED_SOURCES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"TrustedSources.plist"]
 #define __PACKAGE_SOURCES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"PackageSources.plist"]

@@ -32,6 +32,11 @@ static ATPackageManager * sharedInstance = nil;
 		if(![[NSFileManager defaultManager] fileExistsAtPath:__PRIVATE_PATH__]) {
 			[[NSFileManager defaultManager] createDirectoryAtPath:__PRIVATE_PATH__ attributes:nil];
 		}
+        
+        // Create our temp directory, if it doesn't exist yet
+		if(![[NSFileManager defaultManager] fileExistsAtPath:__PARENT_TEMP_PATH__]) {
+			[[NSFileManager defaultManager] createDirectoryAtPath:__PARENT_TEMP_PATH__ attributes:nil];
+		}
 
 		// Clean up temp files
 		if([[NSFileManager defaultManager] fileExistsAtPath:__TEMP_PATH__]) [[NSFileManager defaultManager] removeFileAtPath:__TEMP_PATH__ handler:nil];
