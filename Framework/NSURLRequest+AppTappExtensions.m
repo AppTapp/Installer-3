@@ -9,7 +9,6 @@
 + (id)requestWithURL:(NSURL *)aURL {
 	NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:aURL cachePolicy:/*NSURLRequestReloadIgnoringCacheData*/NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
 	[request setValue:__USER_AGENT__ forHTTPHeaderField:@"User-Agent"];
-	[request setValue:[ATPlatform deviceUUID] forHTTPHeaderField:@"X-Device-UUID"];
 
 	return request;
 }

@@ -51,7 +51,6 @@
 
 	NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:sourceURL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
 	[request setValue:__USER_AGENT__ forHTTPHeaderField:@"User-Agent"];
-	[request setValue:[ATPlatform deviceUUID] forHTTPHeaderField:@"X-Device-UUID"];
 	
 	connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
