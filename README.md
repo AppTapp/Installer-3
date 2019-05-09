@@ -12,17 +12,25 @@ Installer source code, AppTapp Framework source, Repository Code, Translation st
 
 ### Building
 
-Linux:
-- Your going to need a toolchain (arm-apple-darwin) capable of build binaries for the arm-apple-darwin platform.
-- You can obtain this here http://whitera1n.com/lti/ follow the instructions carefully, you may do this in a chroot on modern systems.
-- You will also need to compile https://github.com/tpoechtrager/cctools-port for your host in order to obtain install_name_tool. You may just compile and install that one binary if you want. This program also comes with odcctools compiled but not installed with the odcctools from LTI.
-- Now unzip the headers.zip to /usr/local/arm-apple-darwin/include/
-- After all this enter the Installer directory and type make.
-- Profit!!!
+Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with http://whitera1n.com/lti.
 
-Mac OS X:
-- Install LTI v2.0 or newer from http://whitera1n.com/lti on a PPC or Intel Mac OS X 10.4 Tiger Mac.
-- Then cd into the Installer directory & execute make.
+Once the toolchain is installed you can simply cd into the "Installer" directory and "make".
+
+### Installing
+
+On the iPhone OS 1 device, it is recommended you have the Moden iPhone Unix binkit installed to run these commands over ssh or in a Terminal app.
+
+Copy Installer.app to /Applications/Installer.app.
+
+chown -R root:wheel /Applications/Installer.app
+
+chmod 4755 /Applications/Installer.app/Installer
+
+killall -9 SpringBoard
+
+### Debugging 
+
+A neat trick you can do is run executables on the iPhone or iPod Touch like you can on Mac OS X. Over SSH execute /Applications/Installer.app/Installer (if your root you don't even need to set those pesky permissions). Installer.app will open and you can see all the printfs as it runs. This allows you to see where stuff is working and where stuff is broken when making changes to the source. When you want to exit Installer.app, you need to use the ctrl+c combo on whatever you used to SSH into your test device.
 
 ### Credit
 
@@ -98,15 +106,15 @@ Version 3.12
 - Tweaked installation failed message to be more informative on possible fixes.
 - Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
-
-##Downloads
+## Downloads
 - [Installer v3.0](http://pwnstaller.cc/Installer-3.0.zip)
 - [Installer v3.01](http://pwnstaller.cc/Installer-3.01.zip)
 - [Installer v3.1](http://pwnstaller.cc/Installer-3.1.zip)
 - [Installer v3.11](http://pwnstaller.cc/Installer-3.11.zip)
 - [Installer v3.12](http://pwnstaller.cc/Installer-3.12.zip)
 - [Installer v3.13](http://pwnstaller.cc/Installer-3.13.zip)
+
 ### License
 
-The Installer 3 source code is being released under the MIT license.
+The Installer 3 source code is being released under the MIT license. See the LICENSE file for more information.
 
