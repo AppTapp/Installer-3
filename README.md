@@ -104,8 +104,8 @@ Version 3.12
 
 Version 3.13 
 
--Removed UUID tracking, faster source refreshing.
--Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
+- Removed UUID tracking, faster source refreshing.
+- Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
 
 ### License
 
