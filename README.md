@@ -24,7 +24,7 @@ Copy Installer.app to /Applications/Installer.app.
 
 chown -R root:wheel /Applications/Installer.app
 
-chmod -R 4755 /Applications/Installer.app/Installer
+chmod 4755 /Applications/Installer.app/Installer
 
 killall -9 SpringBoard
 
