@@ -1,4 +1,4 @@
-TESTHOST = mjuPhone.local.
+TESTHOST = 192.168.1.253
 HEAVENLY = /usr/local/share/iphone-filesystem
 CC = arm-apple-darwin-gcc
 CFLAGS = -Wall -x objective-c -mmacosx-version-min=10.4
@@ -70,4 +70,8 @@ zip:			bundle
 
 test:			all
 			scp -r Installer.app root@$(TESTHOST):/Applications/
+			ssh root@$(TESTHOST) chown -R root:wheel /Applications/Installer.app
+			ssh root@$(TESTHOST) chmod 4755 /Applications/Installer.app/Installer
+			ssh root@$(TESTHOST) killall -9 SpringBoard
+
 
