@@ -1,4 +1,4 @@
-TESTHOST = 192.168.1.253
+TESTHOST = replace-with-your-device-ip
 HEAVENLY = /usr/local/share/iphone-filesystem
 CC = arm-apple-darwin-gcc
 CFLAGS = -Wall -x objective-c -mmacosx-version-min=10.4
@@ -62,13 +62,13 @@ bundle:			Framework Installer
 			cp PackageNew.png Installer.app/PackageNew.png
 			cp Background.png Installer.app/Background.png
 			cp -Rf resources/* Installer.app/
-			cp -r ../Library Installer.app/Library
 
 zip:			bundle
 			rm -rf installer.zip
-			zip -r installer-3.12.zip Installer.app 
+			zip -r installer-3.13.zip Installer.app 
 
 test:			all
+			ssh root@$(TESTHOST) rm -rf /Applications/Installer.app
 			scp -r Installer.app root@$(TESTHOST):/Applications/
 			ssh root@$(TESTHOST) chown -R root:wheel /Applications/Installer.app
 			ssh root@$(TESTHOST) chmod 4755 /Applications/Installer.app/Installer
