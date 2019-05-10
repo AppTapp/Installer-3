@@ -8,7 +8,7 @@ Installer 3 was the de facto package manager for iPhoneOS 1 developed by Ripdev 
 
 ### What is included?
 
-Installer source code, AppTapp Framework source, Repository Code, Translation strings.
+Installer source code, AppTapp Framework source, and Translation strings.
 
 ### Building
 
