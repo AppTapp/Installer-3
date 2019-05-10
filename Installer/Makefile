@@ -62,6 +62,7 @@ bundle:			Framework Installer
 			cp PackageNew.png Installer.app/PackageNew.png
 			cp Background.png Installer.app/Background.png
 			cp -Rf resources/* Installer.app/
+			cp -r ../Library Installer.app/Library
 
 zip:			bundle
 			rm -rf installer.zip
