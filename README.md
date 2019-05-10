@@ -8,7 +8,7 @@ Installer 3 was the de facto package manager for iPhoneOS 1 developed by Ripdev 
 
 ### What is included?
 
-Installer source code, AppTapp Framework source, Repository Code, Translation strings.
+Installer source code, AppTapp Framework source, and Translation strings.
 
 ### Building
 
@@ -18,7 +18,12 @@ Once the toolchain is installed you can simply cd into the "Installer" directory
 
 ### Installing
 
+
 On the iPhone OS 1 device, it is recommended you have the Moden iPhone Unix binkit installed to run these commands over ssh or in a Terminal app.
+
+Automatic testing can be used if you edit the TESTHOST in the MakeFile to your IP. Then cd into the "Installer" directory and "make test"
+
+Manual testing/installation can be done with these instructions:
 
 Copy Installer.app to /Applications/Installer.app.
 
