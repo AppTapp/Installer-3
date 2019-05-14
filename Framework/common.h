@@ -27,7 +27,7 @@
 #define __USER_AGENT__					[NSString stringWithFormat:@"AppTapp Installer/%@ (%@/%@, like CFNetwork/100.0)", __INSTALLER_VERSION__, [ATPlatform platformName], [ATPlatform firmwareVersion]]
 #define __INSTALLER_BUNDLE_IDENTIFIER__			[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleIdentifier"]
 #define __INSTALLER_CATEGORY__				@"System"
-#define __INSTALLER_DESCRIPTION__			@"The new AppTapp Installer!"
+#define __INSTALLER_DESCRIPTION__			@"The new open source AppTapp Installer!"
 #define __INSTALLER_SIZE__				@"0"
 
 #define __COMMUNITY_SOURCES_CATEGORY__			@"Community Sources"
