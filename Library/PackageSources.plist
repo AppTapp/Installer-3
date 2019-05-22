@@ -8,15 +8,15 @@
 		<key>contact</key>
 		<string>lex</string>
 		<key>description</key>
-		<string>The ziphone.co Installer.app source for 1.0-1.1.5 firmware.</string>
+		<string>The lexploit.com Installer.app source for 1.0-1.1.5 firmware.</string>
 		<key>location</key>
-		<string>http://ziphone.co/apptapp/repo.xml</string>
+		<string>http://lexploit.com/apptapp/repo.xml</string>
 		<key>maintainer</key>
 		<string>lex</string>
 		<key>name</key>
 		<string>AppTapp Unofficial</string>
 		<key>url</key>
-		<string>http://ziphone.co</string>
+		<string>http://lexploit.com</string>
     </dict>
 	<dict>
 		<key>category</key>
