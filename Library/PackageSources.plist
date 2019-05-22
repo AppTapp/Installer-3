@@ -4,31 +4,31 @@
 <array>
 	<dict>
 		<key>category</key>
-		<string>Legacy</string>
+		<string>Lex</string>
 		<key>contact</key>
 		<string>lex</string>
 		<key>description</key>
-		<string>The Whitera1n.com Installer.app source for 1.0-1.1.5 firmware.</string>
+		<string>The ziphone.co Installer.app source for 1.0-1.1.5 firmware.</string>
 		<key>location</key>
-		<string>http://whitera1n.com/apptapp/repo.xml</string>
+		<string>http://ziphone.co/apptapp/repo.xml</string>
 		<key>maintainer</key>
 		<string>lex</string>
 		<key>name</key>
 		<string>AppTapp Unofficial</string>
 		<key>url</key>
-		<string>http://whitera1n.com</string>
+		<string>http://ziphone.co</string>
     </dict>
 	<dict>
 		<key>category</key>
 		<string>Pwnstaller</string>
 		<key>contact</key>
-		<string>randomNinja64 on reddit</string>
+		<string>Tei1r</string>
 		<key>description</key>
 		<string>Pwnstaller Installer 3 Repo packages</string>
 		<key>location</key>
 		<string>http://pwnstaller.cc/repo.xml</string>
 		<key>maintainer</key>
-		<string>tie1</string>
+		<string>tie1r</string>
 		<key>name</key>
 		<string>Pwnstaller Repo</string>
 		<key>url</key>
