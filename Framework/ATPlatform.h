@@ -12,6 +12,5 @@
 + (NSArray *)preNikitaFirmwares;
 + (BOOL)hasNikita;
 + (NSString *)applicationsPath;
-+ (NSString *)deviceUUID;
 
 @end

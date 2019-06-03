@@ -47,7 +47,7 @@ clean:
 		$(CC) -c $(CFLAGS) $(CCFLAGS) -DUNIX -DDLL -DUSE_ZLIB -DBSD $< -o $@
 
 
-AppTapp:		ATPackageManager.o ATDownloader.o ATUnpacker.o ATScript.o NSString+AppTappExtensions.o NSDate+AppTappExtensions.o NSFileManager+AppTappExtensions.o NSNumber+AppTappExtensions.o NSURLRequest+AppTappExtensions.o NSURL+AppTappExtensions.o NSArray+AppTappSources.o NSArray+AppTappPackages.o NSArray+AppTappQueue.o NSDictionary+AppTappQueue.o NSDictionary+AppTappSource.o NSDictionary+AppTappPackage.o ATPlatform.o ATSourceFetcher.o unzip.o ioapi.o ripdev-uuid.o
+AppTapp:		ATPackageManager.o ATDownloader.o ATUnpacker.o ATScript.o NSString+AppTappExtensions.o NSDate+AppTappExtensions.o NSFileManager+AppTappExtensions.o NSNumber+AppTappExtensions.o NSURLRequest+AppTappExtensions.o NSURL+AppTappExtensions.o NSArray+AppTappSources.o NSArray+AppTappPackages.o NSArray+AppTappQueue.o NSDictionary+AppTappQueue.o NSDictionary+AppTappSource.o NSDictionary+AppTappPackage.o ATPlatform.o ATSourceFetcher.o unzip.o ioapi.o 
 			$(LD) $(LDFLAGS) $(BUNDLEFLAGS) $^ -o $@
 
 
