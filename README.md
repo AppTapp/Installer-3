@@ -116,6 +116,11 @@ Version 3.13
 - Removed UUID tracking, faster source refreshing.
 - Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
 - Temp directory auto generates in ~/Library/Installer. This fixes a possible bug where if Installer.app was not on disk0s2 and was on disk0s1, a single package could fill up the entire root partition due to the Library change.
+- Some small improvements to Local Packages Repo
+- Removed Old and Dead Donate Pop-Up
+- Added more and improved the featured page
+- Trusted Sources Plist has been moved to pwnstaller.cc/trust.plist
+- Untrusted Sources has improved
 
 ## Downloads
 - [Installer v3.0](http://pwnstaller.cc/Installer-3.0.zip)
