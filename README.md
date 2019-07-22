@@ -12,7 +12,7 @@ Installer source code, AppTapp Framework source, and Translation strings.
 
 ### Building
 
-Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with http://lexploit.com/lti/.
+Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with https://github.com/randomuseronline/lexs-toolchain-installer
 
 Once the toolchain is installed you can simply cd into the "Installer" directory and "make".
 
