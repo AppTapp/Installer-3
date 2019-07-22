@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>About</key>
+    <string>À propos</string>
+    <key>Add</key>
+    <string>Ajouter</string>
+    <key>Add Source</key>
+    <string>Nouveau source</string>
+    <key>Add to Queue</key>
+    <string>Ajouter au queue</string>
+    <key>All Packages</key>
+    <string>Packages</string>
+    <key>Already Donated</key>
+    <string>Déjà donné</string>
+    <key>An Installer update is available, do you wish to update now?</key>
+    <string>Une mise à jour d'Installer est disponible, voulez-vous mettre à jour maintenant?</string>
+    <key>Available Updates</key>
+    <string>Mises à jour disponible</string>
+    <key>Cancel</key>
+    <string>Annuler</string>
+    <key>Categories</key>
+    <string>Catégories</string>
+    <key>Category</key>
+    <string>Catégories</string>
+    <key>Checking sources...</key>
+    <string>Vérification des sources...</string>
+    <key>Cleaning up...</key>
+    <string>Nettoyage...</string>
+    <key>Clear Queue</key>
+    <string>Effacer la queue</string>
+    <key>Confirmation</key>
+    <string>Confirmation</string>
+    <key>Contact</key>
+    <string>Contact</string>
+<key>Copyright 2007-2008 Nullriver Software and RiP Dev</key>
+<string>Copyright ©2007-2008 Nullriver Software et RiP Dev</string>
+<key>Could not refresh sources!</key>
+<string>Impossible d'actualiser les sources!</string>
+<key>Delete</key>
+<string>Effacer</string>
+<key>Donate Later</key>
+<string>Donner plus tard</string>
+<key>Donate Now</key>
+<string>Donner maintenant</string>
+<key>Done</key>
+<string>Fini</string>
+<key>Downloading package...</key>
+<string>Сhargement du paquet…</string>
+<key>Edit</key>
+<string>Éditer</string>
+<key>Error</key>
+<string>Erreur</string>
+<key>Featured</key>
+<string>Recommandés</string>
+<key>Install</key>
+<string>Installer</string>
+<key>Installer Update</key>
+<string>Mise à jour d'Installer</string>
+<key>Installer Updated</key>
+<string>Installer à été mis a jour</string>
+<key>Installer represents many hours of hard work. If you find Installer useful, please consider donating to show your support.</key>
+<string>Installer représente plusieurs heures de travail. Si vous aimez Installer, s'il vous plaît envisager de faire un don</string>
+<key>Installer was not installed correctly. It should be run as root:wheel. We will continue but please remember that it may not function correctly.</key>
+<string>Installer n'a pas été installé correctement. Il devrait être exécuté comme root:wheel. L'instllation va continuer mais souvenez qu'Installer est au risque de mal fonctionner.</string>
+<key>Installer was updated, you will need to restart Instaler.</key>
+<string>Installer à été mis a jour, vous devrez redémarrer Installer..</string>
+<key>Installing package...</key>
+<string>Installation du paquet</string>
+<key>Insufficient Permissions</key>
+<string>Autorisations insuffisantes</string>
+<key>Location</key>
+<string>Emplacement</string>
+<key>Main script execution failed!</key>
+<string>Erreur d'execution du script principal.</string>
+<key>More Info</key>
+<string>Plus d'info</string>
+<key>Name</key>
+<string>Nom</string>
+<key>Not enough free space to update Installer! Please free at least 512 KB of space.</key>
+<string>Vous devez libérer 512 Ko d'espace pour mettre Installer á jour.</string>
+<key>Notice</key>
+<string>Note</string>
+<key>OK</key>
+<string>OK</string>
+<key>Older</key>
+<string>Ancien</string>
+<key>One or more of the updated packages come from an untrusted source and may be unsafe to update!</key>
+<string>Au moins un pauet dans la queue de MàJ vient d'une source non fiable et pourrait être dangereux!</string>
+<key>Package</key>
+<string>Paquet</string>
+<key>Package s/b %@</key>
+<string>Paquet %@</string>
+<key>Packages</key>
+<string>Paquets</string>
+<key>Please Donate</key>
+<string>Donnez s'il vous plait</string>
+<key>Please wait...</key>
+<string>Attendez...</string>
+<key>Postflight script execution failed!</key>
+<string>Exécution du script Postvol à échoué.</string>
+<key>Preflight script execution failed!</key>
+<string>Exécution du script Prévol à échoué..</string>
+<key>Recent Packages</key>
+<string>Paquets récent</string>
+<key>Refresh</key>
+<string>Actualiser</string>
+<key>Refresh Failed</key>
+<string>Actualisation échoué</string>
+<key>Refresh Now</key>
+<string>Actualiser maintenant</string>
+<key>Refreshing sources...</key>
+    <string>Actualisation...</string>
+    <key>Refreshing sources... 2</key>
+    <string>Actualisation des sources…</string>
+    <key>Reinstall</key>
+    <string>Reinstallation</string>
+    <key>Reload</key>
+    <string>Actualiser</string>
+    <key>Remove from Queue</key>
+    <string>Enlève du queue</string>
+    <key>Running postflight...</key>
+    <string>Execution du Postvol…</string>
+    <key>Running preflight...</key>
+    <string>Execution du Prévol…</string>
+    <key>Search</key>
+    <string>Recherche</string>
+    <key>Size</key>
+    <string>Taille</string>
+    <key>Source</key>
+    <string>Source</string>
+    <key>Sources</key>
+    <string>Sources</string>
+    <key>This package comes from an untrusted source and may be unsafe to update!</key>
+    <string>Cepaquet vient d'une source non fiable et pourrait être dangereux de le mettre à jour!</string>
+    <key>This package comes from an untrusted source, it may be unsafe to install!</key>
+    <string>Ce paquet vient d'une source non fiable et pourrait être dangereux d'installer!</string>
+    <key>Today</key>
+    <string>Aujourd'hui</string>
+    <key>Uninstall</key>
+    <string>Désinstaller</string>
+    <key>Uninstalling package...</key>
+    <string>Désinstallation du paquet…</string>
+    <key>Untitled Source</key>
+    <string>Source sans titre</string>
+    <key>Update</key>
+    <string>Mettre à jour</string>
+    <key>Update All</key>
+    <string>Tout mettre à jour</string>
+    <key>Update Now</key>
+    <string>Mettre à jour maintenant</string>
+    <key>Update all packages?</key>
+    <string>Mettre tout les paquets à jour?</string>
+    <key>Updates</key>
+    <string>Mises à jour</string>
+    <key>Updating package...</key>
+    <string>Mise à jour du paquet…</string>
+    <key>Version</key>
+    <string>Version</string>
+    <key>Version %@</key>
+    <string>Version %@</string>
+    <key>Yesterday</key>
+    <string>Hier</string>
+    </dict>
+    </plist>
