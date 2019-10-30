@@ -134,11 +134,13 @@ Installer 3 is being further developed by AppTapp & members of the Legacy Jailbr
 	- Tweaked installation failed message to be more informative on possible fixes.
 	- Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 	
-	Version 3.13
+	Version 3.13 (beta status)
 	
 	- Removed UUID tracking, faster source refreshing.
 	- Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
 	- Temp directory auto generates in ~/Library/Installer. This fixes a possible bug where if Installer.app was not on disk0s2 and was on disk0s1, a single package could fill up the entire root partition due to the Library change.
+	- Added BigBoss mirror to Community Sources.
+	 -Added native building for jailbroken iPhone and iPod Touch.
 
 ### License
 
