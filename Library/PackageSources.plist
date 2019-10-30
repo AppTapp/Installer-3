@@ -50,5 +50,21 @@
 		<key>url</key>
 		<string>http://simplysmp.net</string>
 	</dict>
+	<dict>
+		<key>category</key>
+		<string>BigBoss/string>
+		<key>contact</key>
+		<string>lex</string>
+		<key>description</key>
+		<string>BigBoss Mirror from lexploit.com.</string>
+		<key>location</key>
+		<string>http://lexploti.com/bigboss/repo.xml</string>
+		<key>maintainer</key>
+		<string>lex</string>
+		<key>name</key>
+		<string>BigBoss</string>
+		<key>url</key>
+		<string>http://lexploit.com</string>
+	</dict>
 </array>
 </plist>
