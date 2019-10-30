@@ -14,7 +14,7 @@
 #define __LOCAL_PACKAGES__				[__PRIVATE_PATH__ stringByAppendingPathComponent:@"LocalPackages.plist"]
 
 #define __FEATURED_LOCATION__				@"http://pwnstaller.cc/"
-#define __TRUSTED_SOURCES_LOCATION__			@"http://pwnstaller.cc/trusted.plist"
+#define __TRUSTED_SOURCES_LOCATION__			@"http://repository.apptapp.com/trusted.plist"
 
 #define __DEFAULT_SOURCE_NAME__				@"AppTapp Official"
 #define __DEFAULT_SOURCE_CATEGORY__			@"AppTapp"
@@ -43,8 +43,8 @@
 // SKA Local source support
 #define __LOCAL_SOURCE_LOCATION__			@"local:"
 #define __LOCAL_SOURCE_NAME__				@"Local Packages"
-#define __LOCAL_SOURCE_CATEGORY__			@"Local"
-#define __LOCAL_SOURCE_MAINTAINER__			@"tie1r"
+#define __LOCAL_SOURCE_CATEGORY__			@"AppTapp"
+#define __LOCAL_SOURCE_MAINTAINER__			@"Nullriver, Inc."
 #define __LOCAL_SOURCE_CONTACT__			@"apptapp@nullriver.com"
 #define __LOCAL_SOURCE_FOLDER__				[@"~/Media/Installer" stringByExpandingTildeInPath]
 #define __LOCAL_SOURCE_DESCRIPTION__		@"Local packages in ~/Media/Installer directory."

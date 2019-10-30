@@ -206,6 +206,19 @@ static ATInstaller * sharedInstance = nil;
 	return YES;
 }
 
+- (void)askToDonate {
+	if(![preferences boolForKey:@"didDonate"]) {
+		UIAlertSheet * failAlert = [[UIAlertSheet alloc] init];
+		[failAlert setTitle:NSLocalizedString(@"Please Donate", @"Installer Main")];
+		[failAlert setBodyText:NSLocalizedString(@"Installer represents many hours of hard work. If you find Installer useful, please consider donating to show your support.", @"Installer Main")];
+		[failAlert addButtonWithTitle:NSLocalizedString(@"Donate Now", @"Installer Main")];
+		[failAlert addButtonWithTitle:NSLocalizedString(@"Donate Later", @"Installer Main")];
+		if([preferences boolForKey:@"didAsk"]) [failAlert addButtonWithTitle:NSLocalizedString(@"Already Donated", @"Installer Main")];
+		[failAlert setContext:@"Donate"];
+		[failAlert setDelegate:self];
+		[failAlert popupAlertAnimated:YES];
+	}
+}
 
 - (void)showProgressSheet {
 	if(!progressSheetVisible) {
@@ -491,7 +504,9 @@ static ATInstaller * sharedInstance = nil;
 		[packageManager queuePackage:installerUpdate forOperation:__UPDATE_OPERATION__];
 		[packageManager processQueue];
 	} else if([[sheet context] isEqualToString:@"Donate"]) {
-        // we do nothing
+		[preferences setValue:[NSNumber numberWithBool:YES] forKey:@"didAsk"];
+		if(button == 1) [self openURL:[NSURL URLWithString:@"https://www.paypal.com/xclick/business=paypal%40nullriver%2ecom&item_name=AppTapp&item_number=apptapp&no_shipping=0&no_note=1&tax=0&currency_code=USD"]];
+		else if(button == 3) [preferences setValue:[NSNumber numberWithBool:YES] forKey:@"didDonate"];
 	} else if([[sheet context] isEqualToString:@"Permissions"]) {
 		// we do nothing
 	} else {

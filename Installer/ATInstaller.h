@@ -45,6 +45,7 @@
 - (UIView *)mainView;
 
 // Methods
+- (void)askToDonate;
 - (void)showProgressSheet;
 - (void)hideProgressSheet;
 - (void)refresh;
