@@ -12,17 +12,17 @@ Installer source code, AppTapp Framework source, and Translation strings.
 
 ### Building
 
-Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with https://github.com/randomuseronline/lexs-toolchain-installer
+Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with http://exploit.com/lti
 
 Once the toolchain is installed you can simply cd into the "Installer" directory and "make".
 
 You can also build Installer on any iPhone or iPod Touch jailbroken on firmware 1.0-1.1.5 and install it directly on your device. You will need to install these packages:
 
-Modern iPhone Unix
-Make
-Saurik iPhone Toolchain
-Git(optional)
-ssh or Terminal
+-Modern iPhone Unix
+-Make
+-Saurik iPhone Toolchain
+-Git(optional)
+-ssh or Terminal
 
 These can be found at http://lexploit.com/pxl
 
