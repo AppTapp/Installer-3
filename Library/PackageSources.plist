@@ -58,7 +58,7 @@
 		<key>description</key>
 		<string>BigBoss Mirror from lexploit.com.</string>
 		<key>location</key>
-		<string>http://lexploti.com/bigboss/repo.xml</string>
+		<string>http://lexploit.com/bigboss/repo.xml</string>
 		<key>maintainer</key>
 		<string>lex</string>
 		<key>name</key>
