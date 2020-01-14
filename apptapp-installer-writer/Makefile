@@ -1,9 +1,7 @@
 CC=gcc
 LD=$(CC)
 
-LDFLAGS=-L/usr/lib -lxml2  -lcurl
-LDFLAGS_DAEMON=-Wl,-syslibroot,/usr/local/share/iphone-filesystem -lobjc -ObjC -lxml2 -lz
-
+LDFLAGS=-L/usr/lib -lxml2  
 CFLAGS =-I/usr/include/libxml2
 
 
