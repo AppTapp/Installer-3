@@ -18,6 +18,8 @@ char description[1024];
 char copypathinstallfilepath[1024];
 char copypathsourcefilepath[1024];
 char removepathinstalledfilepath[1024];
+char execinstalledfilepath[1024];
+char execarg[1024];
 
 int main(){
 	
@@ -109,6 +111,44 @@ int main(){
 		printf("\n answer is %c\n", copypathanswer);
 		
 	}
+
+	char execanswer;
+	printf("\nWould you like to add a Exec? Enter (y/n): \n");
+	scanf(" %c", &execanswer);
+	printf("\n answer is %c\n", execanswer);
+	while (execanswer == 'y'){
+
+		xmlTextWriterStartElement(writer,(xmlChar *)"array");
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)"Exec");
+		
+		printf("Enter the binary to exec:\n");
+		scanf(" %1024[^\n]", execinstalledfilepath);
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execinstalledfilepath);
+		
+	char execarganswer;
+		printf("\nWould you like to add another arg for this Exec? Enter (y/n): \n");
+		scanf(" %c", &execarganswer);
+		printf("\n answer is %c\n", execarganswer);
+		while (execarganswer == 'y'){
+			
+		printf("Enter arg for this Exec:\n");
+		scanf(" %1024[^\n]", execarg);
+		
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execarg);
+
+		printf("\nWould you like to add another arg to this Exec? Enter (y/n): \n");
+			scanf(" %c", &execarganswer);
+			printf("\n answer is %c\n", execarganswer);
+		}
+		
+		xmlTextWriterEndElement(writer);
+		printf("\nWould you like to add another Exec? Enter (y/n): \n");
+		
+		scanf(" %c", &execanswer);
+		printf("\n answer is %c\n", execanswer);
+		
+	}
+
 	
 				xmlTextWriterEndElement(writer);
 	
@@ -154,9 +194,52 @@ int main(){
 		printf("\n answer is %c\n", removepathanswer);
 		
 	}
-	xmlTextWriterEndElement(writer);
 
+	//char execanswer;
+	printf("\nWould you like to add a Exec? Enter (y/n): \n");
+	scanf(" %c", &execanswer);
+	printf("\n answer is %c\n", execanswer);
+	while (execanswer == 'y'){
+
+		xmlTextWriterStartElement(writer,(xmlChar *)"array");
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)"Exec");
+		
+		printf("Enter the binary to exec:\n");
+		scanf(" %1024[^\n]", execinstalledfilepath);
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execinstalledfilepath);
+		
+	char execarganswer;
+		printf("\nWould you like to add another arg for this Exec? Enter (y/n): \n");
+		scanf(" %c", &execarganswer);
+		printf("\n answer is %c\n", execarganswer);
+		while (execarganswer == 'y'){
+			
+		printf("Enter arg for this Exec:\n");
+		scanf(" %1024[^\n]", execarg);
+		
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execarg);
+
+		printf("\nWould you like to add another arg to this Exec? Enter (y/n): \n");
+			scanf(" %c", &execarganswer);
+			printf("\n answer is %c\n", execarganswer);
+		}
+		
+		xmlTextWriterEndElement(writer);
+		printf("\nWould you like to add another Exec? Enter (y/n): \n");
+		
+		scanf(" %c", &execanswer);
+		printf("\n answer is %c\n", execanswer);
+		
+	}
+
+	xmlTextWriterEndElement(writer);
         xmlTextWriterEndElement(writer);
+
+        xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"Category");
+        xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)category);
+        xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"date");
+        xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)time);
+
         xmlTextWriterEndElement(writer);
         xmlTextWriterEndDocument(writer);
         xmlFreeTextWriter(writer);

@@ -1,0 +1,36 @@
+<key>bundleIdentifier</key>
+<string>d</string>
+<key>name</key>
+<string>d</string>
+<key>version</key>
+<string>d</string>
+<key>size</key>
+<string>d</string>
+<key>location</key>
+<string>d</string>
+<key>url</key>
+<string>d</string>
+<key>description</key>
+<string>d</string>
+<key>scripts</key>
+<dict>
+ <key>install</key>
+ <array>
+  <array>
+   <string>CopyPath</string>
+   <string>d</string>
+   <string>d</string>
+  </array>
+ </array>
+ <key>Uninstall</key>
+ <array>
+  <array>
+   <string>RemovePath</string>
+   <string>f</string>
+  </array>
+ </array>
+</dict>
+<key>Category</key>
+<string>d</string>
+<key>date</key>
+<string>d</string>

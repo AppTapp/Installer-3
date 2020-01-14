@@ -14,6 +14,7 @@ Execute make.
 
 -CopyPath 
 -RemovePath
+-Exec
 
 ==Implemented Script Keys==
 -Install
