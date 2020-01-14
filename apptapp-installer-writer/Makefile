@@ -5,6 +5,6 @@ LDFLAGS=-L/usr/lib -lxml2
 CFLAGS =-I/usr/include/libxml2
 
 
-pxlm: 
+aiw: 
 	$(CC) $(CFLAGS) aiw.c $(LDFLAGS) -o aiw
 

@@ -148,6 +148,44 @@ int main(){
 		printf("\n answer is %c\n", execanswer);
 		
 	}
+    
+	char execnoerroranswer;
+	printf("\nWould you like to add an ExecNoError? Enter (y/n): \n");
+	scanf(" %c", &execnoerroranswer);
+	printf("\n execnoerroranswer is %c\n", execnoerroranswer);
+	while (execnoerroranswer == 'y'){
+
+		xmlTextWriterStartElement(writer,(xmlChar *)"array");
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)"ExecNoError");
+		
+		printf("Enter the binary to exec:\n");
+		scanf(" %1024[^\n]", execinstalledfilepath);
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execinstalledfilepath);
+		
+	char execnoerrorarganswer;
+		printf("\nWould you like to add another arg for this ExecNoError? Enter (y/n): \n");
+		scanf(" %c", &execnoerrorarganswer);
+		printf("\n answer is %c\n", execnoerrorarganswer);
+		while (execnoerrorarganswer == 'y'){
+			
+		printf("Enter arg for this ExecNoError:\n");
+		scanf(" %1024[^\n]", execarg);
+		
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execarg);
+
+		printf("\nWould you like to add another arg to this ExecNoError? Enter (y/n): \n");
+			scanf(" %c", &execnoerrorarganswer);
+			printf("\n answer is %c\n", execnoerrorarganswer);
+		}
+		
+		xmlTextWriterEndElement(writer);
+		printf("\nWould you like to add another ExecNoError? Enter (y/n): \n");
+		
+		scanf(" %c", &execnoerroranswer);
+		printf("\n answer is %c\n", execnoerroranswer);
+		
+	}
+
 
 	
 				xmlTextWriterEndElement(writer);
@@ -195,7 +233,7 @@ int main(){
 		
 	}
 
-	//char execanswer;
+
 	printf("\nWould you like to add a Exec? Enter (y/n): \n");
 	scanf(" %c", &execanswer);
 	printf("\n answer is %c\n", execanswer);
@@ -229,6 +267,43 @@ int main(){
 		
 		scanf(" %c", &execanswer);
 		printf("\n answer is %c\n", execanswer);
+		
+	}
+    
+	//char execnoerroranswer;
+	printf("\nWould you like to add an ExecNoError? Enter (y/n): \n");
+	scanf(" %c", &execnoerroranswer);
+	printf("\n execnoerroranswer is %c\n", execnoerroranswer);
+	while (execnoerroranswer == 'y'){
+
+		xmlTextWriterStartElement(writer,(xmlChar *)"array");
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)"ExecNoError");
+		
+		printf("Enter the binary to exec:\n");
+		scanf(" %1024[^\n]", execinstalledfilepath);
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execinstalledfilepath);
+		
+	char execnoerrorarganswer;
+		printf("\nWould you like to add another arg for this ExecNoError? Enter (y/n): \n");
+		scanf(" %c", &execnoerrorarganswer);
+		printf("\n answer is %c\n", execnoerrorarganswer);
+		while (execnoerrorarganswer == 'y'){
+			
+		printf("Enter arg for this ExecNoError:\n");
+		scanf(" %1024[^\n]", execarg);
+		
+		xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)execarg);
+
+		printf("\nWould you like to add another arg to this ExecNoError? Enter (y/n): \n");
+			scanf(" %c", &execnoerrorarganswer);
+			printf("\n answer is %c\n", execnoerrorarganswer);
+		}
+		
+		xmlTextWriterEndElement(writer);
+		printf("\nWould you like to add another ExecNoError? Enter (y/n): \n");
+		
+		scanf(" %c", &execnoerroranswer);
+		printf("\n answer is %c\n", execnoerroranswer);
 		
 	}
 
