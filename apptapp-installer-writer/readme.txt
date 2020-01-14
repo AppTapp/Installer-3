@@ -15,6 +15,7 @@ Execute make.
 -CopyPath 
 -RemovePath
 -Exec
+-ExecNoError
 
 ==Implemented Script Keys==
 -Install
@@ -24,4 +25,3 @@ Execute make.
 
 -Automatically get unix time and set it in xml
 -Implement all script commands supported by Installer 3
--Implement optional MD5 key
