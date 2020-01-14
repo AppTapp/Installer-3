@@ -1,40 +1,33 @@
 <key>bundleIdentifier</key>
-<string>d</string>
+<string>f</string>
 <key>name</key>
-<string>d</string>
+<string>f</string>
 <key>version</key>
-<string>d</string>
+<string>f</string>
 <key>size</key>
-<string>d</string>
+<string>f</string>
 <key>location</key>
-<string>d</string>
+<string>f</string>
 <key>url</key>
-<string>d</string>
+<string>f</string>
 <key>description</key>
-<string>d</string>
+<string>f</string>
+<key>MD5</key>
+<string>hhff</string>
 <key>scripts</key>
 <dict>
  <key>install</key>
  <array>
   <array>
    <string>CopyPath</string>
-   <string>/bin/t</string>
-   <string>/g</string>
-  </array>
-  <array>
-   <string>Exec</string>
-   <string>/bin/bash</string>
-   <string>-C</string>
-  </array>
-  <array>
-   <string>ExecNoError</string>
-   <string>/bin/t</string>
+   <string>f</string>
+   <string>f</string>
   </array>
  </array>
  <key>Uninstall</key>
  <array/>
 </dict>
 <key>Category</key>
-<string>d</string>
+<string>f</string>
 <key>date</key>
-<string>d</string>
+<string>f</string>

@@ -3,3 +3,5 @@ version 0.1 - first release.
 version 0.2 - added Exec, added date and category support in output xml.
 
 version 0.2.1 - aded ExecNoError support.
+
+version 0.2.2 - added optional MD5 support. Prettier aiw.c. 
