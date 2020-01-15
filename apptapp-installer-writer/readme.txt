@@ -1,6 +1,6 @@
 AppTapp Installer Writer by lex
 
--For all of Installer 1-3's life, the bane of it's existence has been manually writing the repo.xml file.
+For all of Installer 1-3's life, the bane of it's existence has been manually writing the repo.xml file.
 
 Apptapp Installer Writer is written in C and libxml, and is highly portable. It asks for input then generates the desired XML into an i3.xml file. 
 
@@ -17,7 +17,7 @@ Execute make.
 -Exec
 -ExecNoError
 
-==Implemented Script Keys==
+==Implemented Script Elements==
 -Install
 -Uninstall
 
@@ -25,6 +25,7 @@ Execute make.
 
 -Automatically get unix time and set it in xml
 -Implement all script commands supported by Installer 3
+-Implement check that at least one Script Command per element is added.
 
 ==Usage==
 
