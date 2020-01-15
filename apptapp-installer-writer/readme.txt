@@ -36,5 +36,5 @@ aiw --cp --rp -e --ene --help --version
 --cp Specify you want CopyPath
 --rp Specify you want RemovePath
 -e Specify you want Exec
--ene Specify you want ExecNoError
+--ene Specify you want ExecNoError
 
