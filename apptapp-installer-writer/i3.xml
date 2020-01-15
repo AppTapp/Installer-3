@@ -1,33 +1,25 @@
 <key>bundleIdentifier</key>
-<string>f</string>
+<string>h</string>
 <key>name</key>
-<string>f</string>
+<string>h</string>
 <key>version</key>
-<string>f</string>
+<string>h</string>
 <key>size</key>
-<string>f</string>
+<string>h</string>
 <key>location</key>
-<string>f</string>
+<string>h</string>
 <key>url</key>
-<string>f</string>
+<string>h</string>
 <key>description</key>
-<string>f</string>
-<key>MD5</key>
-<string>hhff</string>
+<string>h</string>
 <key>scripts</key>
 <dict>
  <key>install</key>
- <array>
-  <array>
-   <string>CopyPath</string>
-   <string>f</string>
-   <string>f</string>
-  </array>
- </array>
+ <array/>
  <key>Uninstall</key>
  <array/>
 </dict>
 <key>Category</key>
-<string>f</string>
+<string>h</string>
 <key>date</key>
-<string>f</string>
+<string>h</string>

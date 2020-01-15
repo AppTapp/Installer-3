@@ -25,3 +25,15 @@ Execute make.
 
 -Automatically get unix time and set it in xml
 -Implement all script commands supported by Installer 3
+
+==Usage==
+
+By using args, you can manually specify what Script Commands you want in your XML. This can be much more effecient when compared to the argless usage of AppTapp Installer Writer, which asks you if you want each Script Command one by one.
+
+Usage:
+aiw --cp --rp -e --ene --help --version
+--cp Specify you want CopyPath
+--rp Specify you want RemovePath
+-e Specify you want Exec
+-ene Specify you want ExecNoError
+

@@ -22,6 +22,14 @@ char execinstalledfilepath[1024];
 char execarg[1024];
 char md5[1024];
 
+typedef enum { false = 0, true = !false } bool;
+
+bool copypathyes = false;
+bool removepathyes = false;
+bool execyes = false;
+bool execnoerroryes = false;
+bool argmode = false;
+
 void copypath(){
 	char copypathanswer;
 	printf("\nWould you like to add a CopyPath? Enter (y/n): \n");
@@ -167,8 +175,74 @@ void execnoerror(){
 	}
 }
 
-int main(){
-	
+void setupinterface(){
+    if(argmode){
+    if(execyes){  
+    exec();
+    }
+    if(removepathyes){  
+    removepath();
+    }
+    if(copypathyes){  
+    copypath();
+    }
+    if(execyes){  
+    exec();
+    }
+    if(execnoerroryes){  
+    execnoerror();
+    }
+    }
+    
+    if (!argmode){
+          
+    exec();
+
+    copypath();
+    removepath();    
+    execnoerror();
+}
+}
+
+int main(int argc, char *argv[]){
+ 
+if (argc > 1) { 
+int i;
+for (i=0; i<argc; i++) {
+argmode = true;
+    if (strcmp(argv[i], "--version") == 0) {
+    printf("\nAppTapp Installer Writer v0.2.3 2019\n");
+    return(0);
+    }
+    if (strcmp(argv[i], "--help") == 0) {
+    printf("By using args, you can manually specify what Script Commands you want in your XML. This can be much more effecient when compared to the argless usage of AppTapp Installer Writer, which asks you if you want each Script Command one by one.\n");
+    printf("\nUsage:\n");
+    printf("aiw --cp --rp -e --ene --help --version\n");
+    printf("--cp Specify you want CopyPath\n");
+    printf("--rp Specify you want RemovePath\n");
+    printf("-e Specify you want Exec\n");
+    printf("-ene Specify you want ExecNoError\n");
+    return(0);
+    }
+    if (strcmp(argv[i], "--cp") == 0) {
+    copypathyes = true;
+    printf("\nCopyPath:Enabled\n");
+    }
+    if (strcmp(argv[i], "--rp") == 0) {
+    removepathyes = true;
+    printf("\nRemovePath:Enabled\n");
+    }
+    if (strcmp(argv[i], "-e") == 0) {
+    execyes = true;
+    printf("\nExec:Enabled\n");
+    }
+    if (strcmp(argv[i], "--ene") == 0) {
+    execnoerroryes = true;
+    printf("ExecNoError:Enabled\n");
+    }
+}
+}
+
 	printf("Enter BundleID:\n");
 	scanf(" %1024[^\n]", bundleIdentifier);
 	printf("Enter Name:\n");
@@ -235,11 +309,8 @@ int main(){
     
     xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"install");		
     xmlTextWriterStartElement(writer,(xmlChar *)"array");
-		
-    exec();
-    copypath();
-    removepath();    
-    execnoerror();
+	
+setupinterface();
     
 	printf("\n stating element: Uninstall\n");
 	
@@ -248,10 +319,7 @@ int main(){
     xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"Uninstall");
     xmlTextWriterStartElement(writer,(xmlChar *)"array");	
 	
-    exec();
-    copypath();
-    removepath();    
-    execnoerror();
+setupinterface();
 	
 	xmlTextWriterEndElement(writer);
     xmlTextWriterEndElement(writer);
@@ -265,6 +333,6 @@ int main(){
     xmlTextWriterEndDocument(writer);
     xmlFreeTextWriter(writer);
   
-    exit(0);
+    return(0);
 }
 

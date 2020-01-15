@@ -5,3 +5,5 @@ version 0.2 - added Exec, added date and category support in output xml.
 version 0.2.1 - aded ExecNoError support.
 
 version 0.2.2 - added optional MD5 support. Prettier aiw.c. 
+
+version 0.2.3 - new args, manually specify elements to be written to the XML instead of going through a list of all of them. 
