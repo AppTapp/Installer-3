@@ -278,7 +278,7 @@ int i;
 for (i=0; i<argc; i++) {
 argmode = true;
     if (strcmp(argv[i], "--version") == 0) {
-    printf("\nAppTapp Installer Writer v0.2.3 2019\n");
+    printf("\n0.2.4\n");
     return(0);
     }
     if (strcmp(argv[i], "--help") == 0) {
@@ -397,7 +397,7 @@ setupinterface();
 	xmlTextWriterEndElement(writer);
     xmlTextWriterEndElement(writer);
 
-    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"Category");
+    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"category");
     xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)category);
     xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"date");
     xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)time);
