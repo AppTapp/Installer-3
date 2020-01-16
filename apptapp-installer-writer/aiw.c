@@ -15,6 +15,8 @@ char url[1024];
 char time[1024];
 char category[1024];
 char description[1024];
+char maintainer[1024];
+char contact[1024];
 char copypathinstallfilepath[1024];
 char copypathsourcefilepath[1024];
 char removepathinstalledfilepath[1024];
@@ -71,6 +73,8 @@ void removepath(){
     printf("Enter install path of previous file or directory in package:\n");
     scanf(" %1024[^\n]", removepathinstalledfilepath);
 		
+    xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)removepathinstalledfilepath);
+		
 	char removeanotherpathanswer;
     printf("\nWould you like to remove another path with RemovePath? Enter (y/n): \n");
     scanf(" %c", &removeanotherpathanswer);
@@ -85,6 +89,7 @@ void removepath(){
     printf("\nWould you like to remove another path with RemovePath? Enter (y/n): \n");
         scanf(" %c", &removeanotherpathanswer);
         printf("\n answer is %c\n", removeanotherpathanswer);
+
     }
 		
     xmlTextWriterEndElement(writer);
@@ -175,11 +180,73 @@ void execnoerror(){
 	}
 }
 
+void start(){
+
+	printf("Enter Contact info:\n");
+	scanf(" %1024[^\n]", contact);
+	printf("Enter Name:\n");
+ 	scanf(" %1024[^\n]", name);
+	printf("Enter Category:\n");
+	scanf(" %1024[^\n]", category);
+	printf("Enter URL to this file:\n");
+	scanf(" %1024[^\n]", url);
+	printf("Enter Description:\n");
+	scanf(" %1024[^\n]", description);
+	printf("Enter Maintainer:\n");
+	scanf(" %1024[^\n]", maintainer);
+    
+    writer = xmlNewTextWriterFilename("i3.xml", 0);
+				
+    xmlTextWriterStartDocument(writer, "1.0", "UTF-8", NULL);
+    xmlTextWriterSetIndent(writer,1);
+    xmlTextWriterStartDTD(writer,(xmlChar *)"plist",(xmlChar *)"-//Apple Computer//DTD PLIST 1.0//EN",(xmlChar *)"http://www.apple.com/DTDs/PropertyList-1.0.dtd");
+    xmlTextWriterEndDTD(writer);
+        
+    xmlTextWriterStartElement(writer,(xmlChar *)"plist");
+    
+    xmlTextWriterStartElement(writer,(xmlChar *)"dict");
+    
+    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"info");
+    
+    xmlTextWriterStartElement(writer,(xmlChar *)"dict");
+
+    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"category");
+    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)category);       
+        
+	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"name");
+	xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)name);
+	
+	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"maintainer");
+	xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)maintainer);
+	
+	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"contact");
+	xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)contact);
+    
+	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"url");
+	xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)url);
+    
+	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"description");
+	xmlTextWriterWriteElement(writer,(xmlChar *)"string", (xmlChar *)description);
+    
+    xmlTextWriterEndElement(writer);
+
+
+	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"packages");
+
+    xmlTextWriterStartElement(writer,(xmlChar *)"array");
+    
+    xmlTextWriterStartElement(writer,(xmlChar *)"dict");
+
+    xmlTextWriterEndElement(writer);
+    xmlTextWriterEndDocument(writer);
+    xmlFreeTextWriter(writer);
+    
+   
+}
+  
+
 void setupinterface(){
     if(argmode){
-    if(execyes){  
-    exec();
-    }
     if(removepathyes){  
     removepath();
     }
@@ -217,11 +284,17 @@ argmode = true;
     if (strcmp(argv[i], "--help") == 0) {
     printf("By using args, you can manually specify what Script Commands you want in your XML. This can be much more effecient when compared to the argless usage of AppTapp Installer Writer, which asks you if you want each Script Command one by one.\n");
     printf("\nUsage:\n");
-    printf("aiw --cp --rp -e --ene --help --version\n");
+    printf("aiw --start --cp --rp -e --ene --help --version\n");
+	printf("--start Start an Installer source XML\n");
     printf("--cp Specify you want CopyPath\n");
     printf("--rp Specify you want RemovePath\n");
     printf("-e Specify you want Exec\n");
     printf("-ene Specify you want ExecNoError\n");
+    return(0);
+    }
+    if (strcmp(argv[i], "--start") == 0) {
+    start();
+    printf("\nStarting Source XML:Enabled\n");
     return(0);
     }
     if (strcmp(argv[i], "--cp") == 0) {
@@ -305,18 +378,18 @@ argmode = true;
 	xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"scripts");	
     xmlTextWriterStartElement(writer,(xmlChar *)"dict");
     
-	printf("\n stating element: Install\n");
+	printf("\n stating element: install\n");
     
     xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"install");		
     xmlTextWriterStartElement(writer,(xmlChar *)"array");
 	
 setupinterface();
     
-	printf("\n stating element: Uninstall\n");
+	printf("\n stating element: uninstall\n");
 	
     xmlTextWriterEndElement(writer);
 	
-    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"Uninstall");
+    xmlTextWriterWriteElement(writer,(xmlChar *)"key",(xmlChar *)"uninstall");
     xmlTextWriterStartElement(writer,(xmlChar *)"array");	
 	
 setupinterface();
