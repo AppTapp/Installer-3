@@ -1,8 +1,8 @@
 TESTHOST = replace-with-your-device-ip
 HEAVENLY = /usr/local/share/iphone-filesystem
-CC = arm-apple-darwin-gcc
-CFLAGS = -Wall -x objective-c -mmacosx-version-min=10.4
-LD = arm-apple-darwin-ld
+CC = arm-apple-darwin8-gcc
+CFLAGS = -Wall -x objective-c -I/usr/local/share/iphone-filesystem/usr/include
+LD = arm-apple-darwin8-ld
 LDFLAGS = -ObjC -syslibroot $(HEAVENLY) \
 	  -F$(HEAVENLY)/System/Library/Frameworks \
 	  -framework CoreFoundation -framework Foundation \

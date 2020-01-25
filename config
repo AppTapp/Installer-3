@@ -1,0 +1,60 @@
+#!/bin/bash
+#Installer 3 config
+
+gcc=false
+armappledarwin=false
+armappledarwin8=false
+
+echo "Checking for target argument..."
+if [[ $# -eq 0 ]] ; then
+    echo "Config failed. I do not know what compiler you want to use. Supply an argument of gcc, arm-apple-darwin, or arm-apple-darwin8. For usage execute config --help."
+    exit 1
+fi
+
+for arg in "$@"
+do
+    if  [ "$arg" == "gcc" ]
+    then
+	gcc=true
+    elif  [ "$arg" == "arm-apple-darwin" ]; then
+	armappledarwin=true
+    elif  [ "$arg" == "arm-apple-darwin8" ]; then
+	armappledarwin8=true
+    elif  [ "$arg" == "--help" ]; then
+	echo "Usage"
+	echo "====="
+	echo
+	echo "config gcc		Compile Installer 3 on iOS 1.x."
+	echo
+	echo "config arm-apple-darwin		Cross compile Installer 3 with the first iOS 1 cross compiler. LLVM-GCC 4.0.1 from the iPhone Dev Toolchain."
+	echo
+	echo "config arm-apple-darwin8		Cross compile Installer 3 with Sauriks compiler. LLVM-GCC 4.2.1"
+	echo
+	exit 1
+    else
+	echo "Config failed. Invalid target $arg. For usage, execute config --help" 
+        exit 1  
+fi
+done
+
+cd "${BASH_SOURCE%/*}"
+
+if $armappledarwin; then
+cp Framework/Makefile-arm-apple-darwin Framework/Makefile
+cp Installer/Makefile-arm-apple-darwin Installer/Makefile
+fi
+
+if $armappledarwin8; then
+cp Framework/Makefile-arm-apple-darwin8  Framework/Makefile
+cp Installer/Makefile-arm-apple-darwin8  Installer/Makefile
+fi
+
+if $gcc; then
+cp Framework/Makefile-gcc  Framework/Makefile
+cp Installer/Makefile-gcc  Installer/Makefile
+fi
+
+cd Installer
+echo "Installer 3 configured"
+echo "Now execute Make"
+exec bash

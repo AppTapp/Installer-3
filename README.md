@@ -12,55 +12,11 @@ Installer source code, AppTapp Framework source, and Translation strings.
 
 ### Building
 
-Installer 3 is known to build on Linux and Mac OS X with the iPhone Dev Toolchain. It's easiest to install the toolchain with http://lexploit.com/lti
-
-Once the toolchain is installed you can simply cd into the "Installer" directory and "make".
-
-You can also build Installer on any iPhone or iPod Touch jailbroken on firmware 1.0-1.1.5 and install it directly on your device. You will need to install these packages:
-
--Modern iPhone Unix
--Make
--Saurik iPhone Toolchain
--Git(optional)
--ssh or Terminal
-
-These can be found at http://lexploit.com/pxl
-
-After you cd into the "Installer" director, execute:
-
-make -f Makefile-i
-
-### Installing A Native Build
-
-If you built on the jailbroken firmware 1.0-1.1.5 iPhone or iPod Touch itself you can do the command:
-
-make -f Makefile-i install 
-
-to install the App on your device. It will replace any current Installer version on your device. You may need to restart SpringBoard to see it.
-
-### Cross Compiled Install
-
-On the iPhone OS 1 device, it is recommended you have the Moden iPhone Unix binkit installed to run these commands over ssh or in a Terminal app.
-
-Automatic testing can be used if you edit the TESTHOST in the MakeFile to your IP. Then cd into the "Installer" directory and "make test"
-
-Manual testing/installation can be done with these instructions:
-
-Copy Installer.app to /Applications/Installer.app.
-
-chown -R root:wheel /Applications/Installer.app
-
-chmod 4755 /Applications/Installer.app/Installer
-
-Restart SpringBoard
-
-### Debugging 
-
-A neat trick you can do is run executables on the iPhone or iPod Touch like you can on Mac OS X. Over SSH execute /Applications/Installer.app/Installer (if your root you don't even need to set those pesky permissions). Installer.app will open and you can see all the printfs as it runs. This allows you to see where stuff is working and where stuff is broken when making changes to the source. When you want to exit Installer.app, you need to use the ctrl+c combo on whatever you used to SSH into your test device.
+Installer 3 can be compiled or cross compiled with 3 different compilers. See the file INSTALL for documentation. 
 
 ### Packaging
 
-A new portable c program using libxml that can generate Installer 3 repository XML files is now included in Installer 3's source in the apptapp-installer-writer directory.
+A new portable c program using libxml that can generate Installer 3 repository XML files is now included in Installer 3's source in the Writer directory.
 
 TODO: More information on setting up a repository.
 
@@ -147,6 +103,9 @@ Installer 3 is being further developed by AppTapp & members of the Legacy Jailbr
 	- Temp directory auto generates in ~/Library/Installer. This fixes a possible bug where if Installer.app was not on disk0s2 and was on disk0s1, a single package could fill up the entire root partition due to the Library change.
 	- Added BigBoss mirror to Community Sources.
 	 -Added native building for jailbroken iPhone and iPod Touch.
+	-Added Writer program to create XML.
+	-Added arm-apple-darwin8 support and new config script.
+	-Implemented script commands into AppTapp Installer Writer: CopyPath, RemovePath, Exec, ExecNoError.
 
 ### License
 
