@@ -16,9 +16,28 @@ Installer 3 can be compiled or cross compiled with 3 different compilers. See th
 
 ### Packaging
 
-A new portable c program using libxml that can generate Installer 3 repository XML files is now included in Installer 3's source in the Writer directory.
+Historically, Installer 3 Sources were setup all by hand. AppTapp Installer Writer is a new program that automates writing bits of XML for packages as well as setting up a source from scratch. 
 
-TODO: More information on setting up a repository.
+To build AppTapp Installer Writer, cd into the Writer directory and execute make. 
+
+By using args, you can manually specify what Script Commands you want in your XML. This can be much more effecient when compared to the argless usage of AppTapp Installer Writer, which asks you if you want each Script Command one by one.
+
+Full Usage:
+aiw --start --cp --rp -e --ene --help --version
+--start Start an Installer source XML
+--cp Specify you want CopyPath
+--rp Specify you want RemovePath
+-e Specify you want Exec
+-ene Specify you want ExecNoError
+
+For examples of existing sources, see
+
+- http://lexploit.com/apptapp/repo.xml
+- http://lexploit.com/bigboss/repo.xml
+- http://simplysmp.net/installer/repo.xml
+- http://pwnstaller.cc/repo.xml
+- http://apptapp.saurik.com/
+
 
 ### Credit
 
@@ -106,6 +125,7 @@ Installer 3 is being further developed by AppTapp & members of the Legacy Jailbr
 	-Added Writer program to create XML.
 	-Added arm-apple-darwin8 support and new config script.
 	-Implemented script commands into AppTapp Installer Writer: CopyPath, RemovePath, Exec, ExecNoError.
+	-Added Saurik's source as default.
 
 ### License
 
