@@ -38,6 +38,13 @@ For examples of existing sources, see
 - http://pwnstaller.cc/repo.xml
 - http://apptapp.saurik.com/
 
+### License
+
+The Installer 3 source code is being released under the MIT license. See the LICENSE.md file for more information.
+
+### What's New
+
+See the file CHANGELOG.md for all changes made from version 3.0 to the currently in development 3.1.3 beta.
 
 ### Credit
 
@@ -58,12 +65,3 @@ French
 ### Future Development
 
 Installer 3 is being further developed by AppTapp & members of the Legacy Jailbreak community for iPhone OS 1. There are no plans to update Installer 3 past iPhoneOS 1. For iPhoneOS 2, see the upcoming Installer 4 source code. See /r/LegacyJailbreak & https://discord.gg/4qec5AV
-
-### Changelog 
-
-See the file CHANGELOG.md for all changes made from version 3.0 to the currently in development 3.1.3 beta.
-
-### License
-
-The Installer 3 source code is being released under the MIT license. See the LICENSE file for more information.
-
