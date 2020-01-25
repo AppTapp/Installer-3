@@ -18,7 +18,7 @@ execute config gcc for compiling on iOS 1 with Saurik's GCC 4.2.1 compiler.
 
 execute config arm-apple-darwin for cross compiling with the iPhone Dev Team LLVM-GCC 4.0.1 compiler.
 
-execute config arm-apple-darwin8 for cross compiling with the iPhone Dev Team LLVM-GCC 4.2.1 compiler.
+execute config arm-apple-darwin8 for cross compiling with the Saurik LLVM-GCC 4.2.1 compiler.
 
 Then execute make.
 

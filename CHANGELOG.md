@@ -1,4 +1,4 @@
-	### Version 3.13 (beta in development not done yet)
+### Version 3.13 (beta in development not done yet)
 	
 	- Removed UUID tracking, faster source refreshing.
 	- Added new permissions check system. If incorrect permissions are set, Installer tells the user how to fix it and then presents an Exit button that quits Installer when tapped. 
@@ -10,7 +10,7 @@
 	-Implemented script commands into AppTapp Installer Writer: CopyPath, RemovePath, Exec, ExecNoError.
 	-Added Saurik's source as default.
 
-	### Version 3.12
+### Version 3.12
 	
 	- Fixed make clean.
 	- Redid make zip and make since the permissions and zip -r9 thing doesn't actually work correctly.
@@ -22,7 +22,7 @@
 	- Added defaut library for Installer.app that includes Pwnstaller, SimplySMP, and AppTapp Unofficial sources.
 
 
-	### VERSION 3.11
+### VERSION 3.11
 	
 	- Localization support (.lproj all the way!)
 	- Sources fetched are no longer cached via NSURLRequest
@@ -35,7 +35,7 @@
 	- Fixed an issue with permissions for the folders being created not getting proper permissions.
 	- The section list table is now properly resized when keyboard appears/disappears.
 
-	### VERSION 3.1
+### VERSION 3.1
 	
 	- Local install repository (~/Media/Installer).
 	- Greatly improved sources refresh time.
@@ -48,7 +48,7 @@
 	- User-Agent being set to the Installer version and also contains platform name and firmware versions.
 	- X-Device-UUID custom header added to all request for possible tracking purposes by the repository owners.
 
-	### VERSION 3.0 - Dialect 300
+### VERSION 3.0 - Dialect 300
 	
 	- Added package operation queues
 	- Added InstallApp(bundleName) and UninstallApp(bundleName) -- use instead of CopyPath/RemovePath to work with regular app bundles
