@@ -36,6 +36,22 @@
 	</dict>
 	<dict>
 		<key>category</key>
+		<string>saurik</string>
+		<key>contact</key>
+		<string>saurik@saurik.comk</string>
+		<key>description</key>
+		<string>Developer Tools & Libraries</string>
+		<key>location</key>
+		<string>http://apptapp.saurik.com</string>
+		<key>maintainer</key>
+		<string>saurik</string>
+		<key>name</key>
+		<string>Saurik's Coding Toolbox</string>
+		<key>url</key>
+		<string>http://saurik.com</string>
+	</dict>
+	<dict>
+		<key>category</key>
 		<string>SimplySMP</string>
 		<key>contact</key>
 		<string>randomNinja64 on reddit</string>
