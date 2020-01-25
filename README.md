@@ -8,11 +8,11 @@ Installer 3 was the de facto package manager for iPhoneOS 1 developed by Ripdev 
 
 ### What is included?
 
-Installer source code, AppTapp Framework source, and Translation strings.
+Installer source code, AppTapp Framework source, AppTapp Installer Writer, and Translation strings.
 
 ### Building
 
-Installer 3 can be compiled or cross compiled with 3 different compilers. See the file INSTALL for documentation. 
+Installer 3 can be compiled or cross compiled with 3 different compilers. See the file INSTALL.md for documentation. 
 
 ### Packaging
 
@@ -46,6 +46,10 @@ The Installer 3 source code is being released under the MIT license. See the LIC
 
 See the file CHANGELOG.md for all changes made from version 3.0 to the currently in development 3.1.3 beta.
 
+### Future Development
+
+Installer 3 is being further developed by AppTapp & members of the Legacy Jailbreak community for iPhone OS 1. There are no plans to update Installer 3 past iPhoneOS 1. For iPhoneOS 2, see the upcoming Installer 4 source code. See /r/LegacyJailbreak & https://discord.gg/4qec5AV
+
 ### Credit
 
 Ripdev
@@ -61,7 +65,3 @@ Russian
 Dutch
 
 French
-
-### Future Development
-
-Installer 3 is being further developed by AppTapp & members of the Legacy Jailbreak community for iPhone OS 1. There are no plans to update Installer 3 past iPhoneOS 1. For iPhoneOS 2, see the upcoming Installer 4 source code. See /r/LegacyJailbreak & https://discord.gg/4qec5AV
