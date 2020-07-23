@@ -32,10 +32,7 @@ aiw --start --cp --rp -e --ene --help --version
 
 For examples of existing sources, see
 
-- http://lexploit.com/apptapp/repo.xml
-- http://lexploit.com/bigboss/repo.xml
 - http://simplysmp.net/installer/repo.xml
-- http://pwnstaller.cc/repo.xml
 - http://apptapp.saurik.com/
 
 ### License
