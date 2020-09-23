@@ -4,38 +4,6 @@
 <array>
 	<dict>
 		<key>category</key>
-		<string>Lex</string>
-		<key>contact</key>
-		<string>lex</string>
-		<key>description</key>
-		<string>The lexploit.com Installer.app source for 1.0-1.1.5 firmware.</string>
-		<key>location</key>
-		<string>http://lexploit.com/apptapp/repo.xml</string>
-		<key>maintainer</key>
-		<string>lex</string>
-		<key>name</key>
-		<string>AppTapp Unofficial</string>
-		<key>url</key>
-		<string>http://lexploit.com</string>
-    </dict>
-	<dict>
-		<key>category</key>
-		<string>Pwnstaller</string>
-		<key>contact</key>
-		<string>Tei1r</string>
-		<key>description</key>
-		<string>Pwnstaller Installer 3 Repo packages</string>
-		<key>location</key>
-		<string>http://pwnstaller.cc/repo.xml</string>
-		<key>maintainer</key>
-		<string>tie1r</string>
-		<key>name</key>
-		<string>Pwnstaller Repo</string>
-		<key>url</key>
-		<string>http://pwnstaller.cc</string>
-	</dict>
-	<dict>
-		<key>category</key>
 		<string>saurik</string>
 		<key>contact</key>
 		<string>saurik@saurik.comk</string>
@@ -65,22 +33,6 @@
 		<string>SimplySMP Repository</string>
 		<key>url</key>
 		<string>http://simplysmp.net</string>
-	</dict>
-	<dict>
-		<key>category</key>
-		<string>BigBoss/string>
-		<key>contact</key>
-		<string>lex</string>
-		<key>description</key>
-		<string>BigBoss Mirror from lexploit.com.</string>
-		<key>location</key>
-		<string>http://lexploit.com/bigboss/repo.xml</string>
-		<key>maintainer</key>
-		<string>lex</string>
-		<key>name</key>
-		<string>BigBoss</string>
-		<key>url</key>
-		<string>http://lexploit.com</string>
 	</dict>
 </array>
 </plist>
